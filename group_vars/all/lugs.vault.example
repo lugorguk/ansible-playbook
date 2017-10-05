@@ -1,0 +1,45 @@
+---
+#lugs:
+#- name: example
+#  uid: 2000
+#  full_name: Example LUG
+#  list: example
+#  hosting: jekyll
+#  contact:
+#    name: Fred Bloggs
+#    email: fred@example.com
+#    phone: 07777777777
+#  mail_aliases:
+#    webmaster: fred@example.com
+#    lugmaster: fred@example.com
+#  staff:
+#  - user: bloggsf
+#    name: Fred Bloggs
+#    uid: 2001
+#    ssh_keys: ssh-rsa AAAAB3NzaC1yc2EAAAA...................Wqe3xxTQEIqZnkrcVcS3TQZM=
+#  - user: bloggsj
+#    name: Joe Bloggs
+#    uid: 2002
+#    ssh_keys: |
+#      ssh-rsa AAAAB3NzaC1yc2EAAAA...................Wqe3xxTQEIqZnkrcVcS3TQZM=
+#      ssh-rsa AAAAB3NzaC1yc2EAAAA...................Wqe3xxTQEIqZnkrcDECAFBAD=
+#- name: sample
+#  list: sample
+#  dns:
+#    A:
+#      sample.lug.org.uk: 192.0.2.1
+#      www.sample.lug.org.uk: 192.0.2.1
+#      sample.lugs.org.uk: 192.0.2.1
+#      www.sample.lugs.org.uk: 192.0.2.1
+#      sample.glug.org.uk: 192.0.2.1
+#      www.sample.glug.org.uk: 192.0.2.1
+#    AAAA:
+#      sample.lug.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#      www.sample.lug.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#      sample.lugs.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#      www.sample.lugs.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#      sample.glug.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#      www.sample.glug.org.uk: 2002:0:0:0:0:0:192.0.2.1
+#    MX:
+#      mx1.mailprovider.example.com: 0
+#      mx2.mailprovider.example.com: 1
