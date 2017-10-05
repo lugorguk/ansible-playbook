@@ -1,0 +1,7 @@
+---
+#admins:
+#  fred:
+#    name: Fred Bloggs
+#    uid: 1005
+#    ssh_keys: |
+#      ssh-rsa AAAAB3NzaC1yc2EAAAA...................Wqe3xxTQEIqZnkrcVcS3TQZM=
