@@ -13,3 +13,12 @@ An ansible playbook to deploy lug.org.uk infrastructure. This playbook is one pa
 * then EITHER
   * Run the playbook against lug.org.uk with `ansible-playbook site.yml -i hosts.live`
   * OR have run it as part of [the Vagrantfile](https://github.com/lugorguk/vagrant-lab-infrastructure) by running `vagrant up`
+
+-----
+
+Any issues, please raise an issue on the relevant project:
+* https://github.com/lugorguk/vagrant-lab-infrastructure : This project, related specifically to the Vagrantfile
+* https://github.com/lugorguk/ansible-playbook : The ansible playbook which will be deployed by the Vagrantfile
+* https://github.com/lugorguk/common : Common activities performed on all the lug.org.uk servers
+
+This is the code which will drive lug.org.uk. It was created by Jon "The Nice Guy" Spriggs (jon@sprig.gs | https://jon.sprig.gs | https://twitter.com/jontheniceguy)
