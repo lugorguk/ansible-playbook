@@ -1,5 +1,11 @@
 ---
 - hosts: all
+  gather_facts: false
+  tasks:
+  - name: Load conditional variables
+    include_vars: "hosts.{% if lab == 'true' %}lab.yml{% else %}live.yml.vault{% endif %}"
+
+- hosts: all
   tasks:
   - name: "Set up NTP on the server"
     include_role:
@@ -13,3 +19,8 @@
   - name: "Run lugorguk Common Activities"
     include_role:
       name: lugorguk.common
+
+- hosts: admin.lug.org.uk
+  tasks:
+  - name: Deploy Specifics for admin.lug.org.uk
+    include_tasks: playbooks/admin.yml
