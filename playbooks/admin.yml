@@ -1,0 +1,20 @@
+---
+- name: Check my status
+  debug:
+    var: "{{ item }}"
+  with_items:
+  - "{{ hostvars['admin.lug.org.uk'] }}"
+
+- name: Deploy software
+  apt:
+    name: bind9
+
+- name: Configure the BIND options
+  template:
+    dest: "/etc/bind/{{ item }}"
+    src: "templates/admin/bind/{{ item }}.j2"
+    owner: root
+    group: bind
+  with_items:
+    - named.conf.options
+    - db.lug.org.uk

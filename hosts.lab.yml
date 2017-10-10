@@ -1,0 +1,37 @@
+---
+hostip:
+  admin:
+    name: admin
+    v4: 192.0.2.199
+    v6: 2002::192:0:2:199
+    v4_mask: 21
+    v6_mask: 64
+  web01:
+    name: web-01
+    v4: 192.0.2.200
+    v6: 2002::192:0:2:200
+    v4_mask: 21
+    v6_mask: 64
+  mailin01:
+    name: mail-in-01
+    v4: 192.0.2.201
+    v6: 2002::192:0:2:201
+    v4_mask: 21
+    v6_mask: 64
+  snm:
+    name: snm
+    v4: 192.0.2.202
+    v6: 2002::192:0:2:202
+    v4_mask: 21
+    v6_mask: 64
+  mailman:
+    name: mailman
+    v4: 192.0.2.203
+    v6: 2002::192:0:2:203
+    v4_mask: 21
+    v6_mask: 64
+    spf: v=spf1 a mx a:mailman.lug.org.uk a:mailman.glug.org.uk a:web-01.lug.org.uk a:web-01.glug.org.uk -all
+bind_forwarders:
+- 192.0.2.53
+bind_slaves:
+- a.example.org.

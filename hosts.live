@@ -1,5 +1,5 @@
-admin.lug.org.uk	ansible_become=true
-mail-in-01.lug.org.uk	ansible_become=true
-mailman.lug.org.uk	ansible_become=true
-web-01.lug.org.uk	ansible_become=true
-snm.lug.org.uk		ansible_become=true
+admin.lug.org.uk	     ansible_become=true
+mail-in-01.lug.org.uk  ansible_become=true
+mailman.lug.org.uk     ansible_become=true
+web-01.lug.org.uk      ansible_become=true
+snm.lug.org.uk         ansible_become=true

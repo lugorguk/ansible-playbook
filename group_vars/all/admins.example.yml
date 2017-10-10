@@ -1,5 +1,5 @@
 ---
-#admins:
+#admin_team:
 #  fred:
 #    name: Fred Bloggs
 #    uid: 1005

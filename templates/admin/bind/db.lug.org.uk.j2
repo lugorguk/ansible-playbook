@@ -1,0 +1,176 @@
+{# ========================================================================= #}
+{#   O U R - R E C O R D S - F O R - L U G - O R G - U K - S E R V I C E S   #}
+{# ========================================================================= #}
+$TTL 86400
+@                       IN SOA   ns1.lug.org.uk. hostmaster.lug.org.uk. (
+                                 {{ ansible_date_time.year }}{{ ansible_date_time.month }}{{ ansible_date_time.day }}{{ ansible_date_time.hour }}	; Serial
+                                 3600   ; Refresh after 1 hour
+                                 600    ; Retry every 10 minutes
+                                 604800 ; Expire after 1 week
+                                 3600   ; Cache failed lookups 1 hour
+                                 )
+
+; Name servers
+@                       IN NS	  ns1.lug.org.uk.
+{% for slave in bind_slaves %}
+@		                    IN NS    {{ slave }}
+{% endfor %}
+
+; List the name server IPs
+ns1                     IN A	   {{ hostip.admin.v4 }}
+ns1                     IN AAAA  {{ hostip.admin.v6 }}
+
+; Our Host addresses
+@                       IN A     {{ hostip.snm.v4 }}
+                        IN AAAA  {{ hostip.snm.v6 }}
+                        IN TXT   "UK Linux User Groups"
+                        IN RP    andy.strugglers.net. lug.org.uk.
+                        IN MX    10 mail-in-01.lug.org.uk.
+                        IN MX    20 mail-in-01.glug.org.uk.
+			                  IN TXT   "v=spf1 a mx -all"
+			                  IN TXT   "google-site-verification=vbowpMgzwoyxTcO_k24S1vNJKHRABaLCh6Si7iq3F8U"
+			                  IN TXT   "google-site-verification=lX0O2hYl_fTlbYTmfZpqt1lsiMnxAb7y7HwgLffYIZs"
+			                  IN TXT   "google-site-verification=TARrHMztTzZ2e7ROLDcEMw0T8G7GNeI_McfNIWpunk0"
+_psl	                  IN TXT   "https://github.com/publicsuffix/list/pull/514"
+www                     IN CNAME	snm
+
+{% for host in hostip %}
+{{ host.name }}         IN A     {{ host.v4 }}
+                        IN AAAA  {{ host.v6 }}
+                        IN RP    andy.strugglers.net. lug.org.uk. lugs.org.uk. glug.org.uk. glugs.org.uk. uklugs.org.
+                        IN MX    10 mail-in-01.lug.org.uk.
+                        IN MX    20 mail-in-01.glug.org.uk.
+                        IN TXT   "{{ host.spf | default('v=spf1 a mx -all') }}"
+{% endfor %}
+
+; LEGACY HOSTNAMES
+mail                    IN CNAME web-01
+ftp                     IN CNAME web-01
+pop                     IN CNAME web-01
+smtp                    IN CNAME web-01
+pop3                    IN CNAME web-01
+login                   IN CNAME web-01
+map                     IN CNAME web-01
+www.map                 IN CNAME web-01
+nuke                    IN CNAME web-01
+www.nuke                IN CNAME web-01
+
+lists                   IN CNAME   mailman
+
+irc                     IN CNAME	irc.blitzed.org.
+penguin                 IN CNAME	irc.blitzed.org.
+
+rt                      IN CNAME	admin
+lugadmin                IN CNAME	admin
+lugadmin.happy          IN CNAME	admin
+lugadmin.dnuk           IN CNAME	admin
+
+down			              IN CNAME	gav2trumpton.plus.com.
+
+{# ========================================================================= #}
+{# L I M I T E D - H O S T I N G - S E R V I C E S - @ - L U G - O R G - U K #}
+{# ========================================================================= #}
+
+{% for pointer in dns_only_record_lugs %}
+  {# ############################################################### #}
+  {#                         Hosting Records                         #}
+  {# ############################################################### #}
+  {% if pointer.full_name is defined %}
+{{ pointer.name }}      IN TXT   "{{ pointer.full_name }}"
+  {% endif %}{# ==> pointer.full_name is defined #}
+
+  {% if pointer.rpr is defined %}
+{{ pointer.name }}      IN RPR   {{ pointer.rpr }}
+  {% endif %}{# ==> pointer.rpr is defined #}
+
+  {% if pointer.contact is defined %}
+    {% if pointer.contact.name is defined %}
+; Contact: {{ pointer.contact.name }}
+    {% endif %}{# ==> pointer.contact.name is defined #}
+    {% if pointer.contact.email is defined %}
+; Email: {{ pointer.contact.email }}
+    {% endif %}{# ==> pointer.contact.email is defined #}
+    {% if pointer.contact.number is defined %}
+; Number: {{ pointer.contact.number }}
+    {% endif %}{# pointer.contact.number is defined #}
+  {% endif %}{# endif pointer.contact is defined #}
+
+  {% if pointer.ns is defined %}
+    {% for ns in pointer.ns %}
+{{ pointer.name }}      IN NS    {{ ns }}
+    {% endfor %}{# ==> ns in pointer.ns #}
+  {% endif %}{# ==> pointer.ns is defined #}
+
+  {% if pointer.mx is defined %}
+    {% for mx in pointer.mx %}
+{{ pointer.name }} IN MX {{ mx }}
+    {% endfor %}{# ==> mx in pointer.mx #}
+  {% endif %}{# ==> pointer.mx is defined #}
+
+  {% if pointer.txt is defined %}
+    {% for txt in pointer.txt %}
+{{ pointer.name }} IN TXT {{ txt }}
+    {% endfor %}{# ==> txt in pointer.txt #}
+  {% endif %}{# ==> pointer.txt is defined #}
+
+  {% if pointer.extra_dns_records is defined %}
+    {% for extra_dns_record in pointer.extra_dns_records %}
+{{ extra_dns_record.target | default(pointer.name) }}      IN {{ extra_dns_record.type | default(CNAME) }} {{ extra_dns_record.record | default(pointer.name) }}
+    {% endfor %}{# ==> alt_host in pointer.alt_hosts #}
+  {% endif %}{# ==> pointer.extra_dns_records is defined #}
+{% endfor %}{# ==> pointer in ns_only_lugs #}
+
+{# ========================================================================= #}
+{# H O S T E D - B Y - L U G - O R G - U K - F O R - A L L - S E R V I C E S #}
+{# ========================================================================= #}
+
+; DNS Records for hosted lugs
+{% for pointer in hosted_lugs %}
+
+  {# ############################################################### #}
+  {#                         Hosting Records                         #}
+  {# ############################################################### #}
+
+{{ pointer.name }}	    IN A     {{ hostip[pointer.host].v4 }}
+{{ pointer.name }}	    IN AAAA  {{ hostip[pointer.host].v6 }}
+www.{{ pointer.name }}	IN CNAME {{ pointer.name4 }}
+
+  {% if pointer.mx is not defined %}
+{{ pointer.name }}      IN MX    10 mail-in-01.lug.org.uk.
+{{ pointer.name }}      IN MX    20 mail-in-01.glug.org.uk.
+  {% else %}{# ==> pointer.mx is not defined #}
+    {% for mx in pointer.mx %}
+{{ pointer.name }}      IN MX    {{ mx }}
+    {% endfor %}{# ==> mx in pointer.mx #}
+  {% endif %}{# ==> pointer.mx is not defined #}
+
+  {% if pointer.full_name is defined %}
+{{ pointer.name }}      IN TXT   "{{ pointer.full_name }}"
+  {% endif %}{# ==> pointer.full_name is defined #}
+
+  {% if pointer.rpr is not defined %}
+{{ pointer.name }}      IN RPR   "{{ hostip[pointer.host].name }}.lug.org.uk. lug.org.uk."
+  {% else %}
+{{ pointer.name }}      IN RPR   "{{ pointer.rpr }}"
+  {% endif %}{# ==> pointer.rpr is defined #}
+
+  {% if pointer.contact is defined %}
+    {% if pointer.contact.name is defined %}
+; Contact: {{ pointer.contact.name }}
+    {% endif %}{# ==> pointer.contact.name is defined #}
+    {% if pointer.contact.email is defined %}
+; Email: {{ pointer.contact.email }}
+    {% endif %}{# ==> pointer.contact.email is defined #}
+    {% if pointer.contact.number is defined %}
+; Number: {{ pointer.contact.number }}
+    {% endif %}{# pointer.contact.number is defined #}
+  {% endif %}{# endif pointer.contact is defined #}
+; Hosted on {{ hostip[pointer.host].name }}.lug.org.uk
+
+  {% if pointer.extra_dns_records is defined %}
+    {% for extra_dns_record in pointer.extra_dns_records %}
+{{ extra_dns_record.target | default(pointer.name) }}      IN {{ extra_dns_record.type | default(CNAME) }} {{ extra_dns_record.record | default(pointer.name) }}
+    {% endfor %}{# ==> alt_host in pointer.alt_hosts #}
+  {% endif %}{# ==> pointer.extra_dns_records is defined #}
+
+{% endfor %}{# ==> pointer in hosted_lugs #}

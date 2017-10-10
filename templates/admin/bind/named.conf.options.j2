@@ -1,0 +1,46 @@
+options {
+	directory "/var/cache/bind";
+	forwarders {
+{% for forwarder in bind_forwarders %}
+		{{ forwarder }}
+{% endfor %}
+	};
+
+	auth-nxdomain no;    # conform to RFC1035
+
+	listen-on-v6 { any; };
+
+  dnssec-enable yes;
+  dnssec-validation yes;
+  dnssec-lookaside auto;
+	allow-query { any; };
+	recursion no;
+	notify yes;
+};
+
+logging {
+  channel "named" {
+    file "/var/log/named.log" versions 7 size 20m;
+    severity info;
+    print-time yes;
+    print-severity yes;
+    print-category yes;
+  };
+
+  category "default" { "named"; };
+  category "general" { "named"; };
+  category "database" { "named"; };
+  category "security" { "named"; };
+  category "config" { "named"; };
+  category "resolver" { "named"; };
+  category "xfer-in" { "named"; };
+  category "xfer-out" { "named"; };
+  category "notify" { "named"; };
+  category "client" { "named"; };
+  category "network" { "named"; };
+  category "update" { "named"; };
+  category "queries" { "null"; };
+  category "dispatch" { "named"; };
+  category "dnssec" { "named"; };
+  category "lame-servers" { "null"; };
+};
