@@ -31,3 +31,7 @@ hostip:
     v4_mask: 21
     v6_mask: 64
     spf: v=spf1 a mx a:mailman.lug.org.uk a:mailman.glug.org.uk a:web-01.lug.org.uk a:web-01.glug.org.uk -all
+bind_forwarders:
+- 192.0.2.53
+bind_slaves:
+- a.example.org.

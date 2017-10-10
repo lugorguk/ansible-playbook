@@ -1,5 +1,5 @@
-admin.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs lab=true
-mail-in-01.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs lab=true
-mailman.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs lab=true
-web-01.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs lab=true
-snm.lug.org.uk		ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs lab=true
+admin.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs
+mail-in-01.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs
+mailman.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs
+web-01.lug.org.uk	ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs
+snm.lug.org.uk		ansible_connection=local ansible_become=true admin_mail_account=jon@sprig.gs

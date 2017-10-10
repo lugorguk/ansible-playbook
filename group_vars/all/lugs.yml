@@ -1,2 +1,0 @@
----
-lugs: "{{ dns_only_record_lugs | default({}) | combine(hosted_lugs | default({}))) }}"

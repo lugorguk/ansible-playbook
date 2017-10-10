@@ -2,25 +2,60 @@
 - hosts: all
   gather_facts: false
   tasks:
-  - name: Load conditional variables
-    include_vars: "hosts.{% if lab == 'true' %}lab.yml{% else %}live.yml.vault{% endif %}"
+  - name: Load lab variables
+    include_vars: hosts.lab.yml
+    when: lab is defined
+  - name: Load live variables
+    include_vars: hosts.live.yml.vault
+    when: lab is not defined or lab == 'false'
+  tags: active
 
 - hosts: all
   tasks:
-  - name: "Set up NTP on the server"
+  - name: Set up NTP on the server
     include_role:
       name: geerlingguy.ntp
     vars:
       ntp_timezone: Europe/London
       ntp_manage_config: true
-      ntp_restrict: ['127.0.0.1']
-      ntp_servers: ["127.0.0.1 iburst", "ntp0.lon.bitfolk.com", "ntp1.lon.bitfolk.com"]
+      ntp_restrict:
+      - 127.0.0.1
+      ntp_servers:
+      - 127.0.0.1 iburst
+      - ntp0.lon.bitfolk.com
+      - ntp1.lon.bitfolk.com
 
-  - name: "Run lugorguk Common Activities"
+  - name: Run lugorguk Common Activities
     include_role:
       name: lugorguk.common
+
+  - name: Set up automated package updates
+    include_role:
+      name: kosssi.ansible-role-apticron
+    vars:
+      apticron_email: "{{ admin_mail_account | default ('root@' ~ ansible_fqdn) }}"
 
 - hosts: admin.lug.org.uk
   tasks:
   - name: Deploy Specifics for admin.lug.org.uk
     include_tasks: playbooks/admin.yml
+
+- hosts: mailman.lug.org.uk
+  tasks:
+  - name: Deploy Specifics for mailman.lug.org.uk
+    include_tasks: playbooks/mailman.yml
+
+- hosts: mail-in-01.lug.org.uk
+  tasks:
+  - name: Deploy Specifics for mail-in-01.lug.org.uk
+    include_tasks: playbooks/mail-in-01.yml
+
+- hosts: snm.lug.org.uk
+  tasks:
+  - name: Deploy Specifics for snm.lug.org.uk
+    include_tasks: playbooks/snm.yml
+
+- hosts: web-01.lug.org.uk
+  tasks:
+  - name: Deploy Specifics for web-01.lug.org.uk
+    include_tasks: playbooks/web-01.yml
