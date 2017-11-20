@@ -1,0 +1,20 @@
+---
+lugs_k:
+  Kent:
+    title: Kent
+    website: http://kentlug.org
+    established_date: ''
+    status: Active
+    last_update: 04/2010
+    categories: South-East
+    url: http://lug.org.uk/node/120
+    contact_address: "{{ protected_email_addresses.kent_lug_lugmaster }}"
+    contact: Dan Attwood
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/kent/
+    permalink: Kent
+    match_type: simple
+    dns_name: kent
+    web_hosting:
+      via: web01
+      to: http://kentlug.org
+    mail_hosting: mail-in-01

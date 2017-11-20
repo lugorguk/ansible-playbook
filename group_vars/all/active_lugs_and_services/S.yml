@@ -1,0 +1,165 @@
+---
+lugs_s:
+  Scottish:
+    title: Scottish
+    website: http://scotlug.org.uk
+    established_date: 1998/02
+    status: Active
+    last_update: 12/2009
+    categories: Scotland
+    url: http://lug.org.uk/node/116
+    contact_address: "{{ protected_email_addresses.scottish_lug_lugmaster }}"
+    contact: Kenny Duffus
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/scottish/
+    permalink: Scottish
+    match_type: dns only
+    dns_name: scottish
+    extra_dns_records:
+    - type: CNAME
+      record: www.scotlug.org.uk.
+    mail_hosting: mail-in-01
+
+  SheffieldLinuxUserGroupandBSDUserGroup:
+    title: Sheffield Linux User Group and BSD User Group
+    website: ''
+    established_date: 2003/07
+    status: Active
+    last_update: 04/2010
+    categories: Yorkshire-and-Humber
+    url: http://lug.org.uk/node/137
+    contact_address: "{{ protected_email_addresses.slugbug_lug_contact }}"
+    contact: Chris Croome
+    mailing_list: http://www.email-lists.org/mailman/listinfo/slugbug
+    permalink: Sheffield Linux User Group and BSD User Group
+    match_type: dns only
+    dns_name: slugbug
+    extra_dns_records:
+    - type: A
+      record: 193.201.200.140
+    - type: MX
+      record: 10 mx0.halon.org.uk.
+
+  Sheffield:
+    title: Sheffield
+    website: http://www.sheflug.org.uk/
+    established_date: 1999/01
+    status: Active
+    last_update: 12/2009
+    categories: Yorkshire-and-Humber
+    url: http://lug.org.uk/node/136
+    contact_address: "{{ protected_email_addresses.sheffield_lug_contact }}"
+    contact: Richard Ibbotson
+    mailing_list: http://sheflug.org.uk/mailman/listinfo/sheflug_sheflug.org.uk
+    permalink: Sheffield
+
+  Shropshire:
+    title: Shropshire
+    website: http://shropshirelug.wordpress.com/
+    established_date: 2000/02
+    status: Active
+    last_update: 11/2013
+    categories: West-Midlands
+    url: http://lug.org.uk/node/163
+    contact_address: "{{ protected_email_addresses.shropshire_lug_lugmaster }}"
+    contact: Dave Harris
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/shropshire
+    permalink: Shropshire
+    match_type: simple
+    dns_name: shropshire
+    web_hosting:
+      via: web01
+      to: http://shropshirelug.wordpress.com/
+    mail_hosting: mail-in-01
+
+  SouthendonSea:
+    title: Southend-on-Sea
+    website: http://soslug.org
+    established_date: 2003/03
+    status: Active
+    last_update: 12/2016
+    categories: South-East
+    url: http://lug.org.uk/node/53
+    contact_address: "{{ protected_email_addresses.southendonsea_lug_lugmaster }}"
+    contact: Derek Shaw
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sos/
+    permalink: Southend-on-Sea
+    match_type: dns only
+    dns_name: sos
+    extra_dns_records:
+    - type: CNAME
+      record: wiki.soslug.org.
+    mail_hosting: mail-in-01
+
+  SouthWales:
+    title: South Wales
+    website: http://www.swlug.org.uk
+    established_date: 2002/01
+    status: Active
+    last_update: 11/2013
+    categories: Wales
+    url: http://lug.org.uk/node/154
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/swlug/
+    permalink: South Wales
+    match_type: hosted
+    dns_name: southwales
+    web_hosting:
+      via: web01
+      to: http://www.swlug.org.uk
+    mail_hosting: mail-in-01
+
+  Staffordshire:
+    title: Staffordshire
+    website: http://staffslug.org.uk/
+    established_date: 1999/03
+    status: Active
+    last_update: 02/2010
+    categories: West-Midlands
+    url: http://lug.org.uk/node/164
+    contact_address: "{{ protected_email_addresses.staffordshire_lug_lugmaster }}"
+    contact: Dave Roberts
+    mailing_list: http://lists.staffslug.org.uk/mailman/listinfo/staffslug
+    permalink: Staffordshire
+    dns_name: staffs
+    web_hosting:
+      via: web01
+      to: http://staffslug.org.uk/
+    mail_hosting: mail-in-01
+
+  Surrey:
+    title: Surrey
+    website: http://www.surrey.lug.org.uk
+    established_date: 2000/02
+    status: Active
+    last_update: 04/2010
+    categories: South-East
+    url: http://lug.org.uk/node/130
+    contact_address: "{{ protected_email_addresses.surrey_lug_contact }}"
+    contact: Surrey LUG admin team
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/surrey/
+    permalink: Surrey
+    match_type: dns only
+    extra_dns_records:
+    - type: A
+      record: 85.119.83.158
+    - target: test.surrey
+    - target: uat.surrey
+    mail_hosting: mail-in-01
+
+  Sussex:
+    title: Sussex
+    website: https://mailman.lug.org.uk/mailman/listinfo/sussex/
+    established_date: 1999/04
+    status: Active
+    last_update: 04/2010
+    categories: South-East
+    url: http://lug.org.uk/node/131
+    contact_address: "{{ protected_email_addresses.sussex_lug_lugmaster }}"
+    contact: Steve Dobson
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sussex/
+    permalink: Sussex
+    match_type: simple
+    dns_name: sussex
+    web_hosting:
+      via: web01
+      to: https://mailman.lug.org.uk/mailman/listinfo/sussex/
+    mail_hosting: mail-in-01

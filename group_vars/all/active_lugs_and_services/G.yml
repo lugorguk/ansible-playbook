@@ -1,0 +1,68 @@
+---
+lugs_g:
+  Glastonbury:
+    title: Glastonbury
+    website: http://lugog.org.uk
+    established_date: 2003/03
+    status: Active
+    last_update: 12/2009
+    categories: South-West
+    url: http://lug.org.uk/node/143
+    contact_address: "{{ protected_email_addresses.glastonbury_lug_lugmaster }}"
+    contact: Sean Miller
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/glastonbury
+    permalink: Glastonbury
+    match_type: simple
+    dns_name: Glastonbury
+    web_hosting:
+      via: web01
+      to: https://mailman.lug.org.uk/mailman/listinfo/glastonbury
+    mail_hosting: mail-in-01
+
+  GloucestershireCotswolds:
+    title: Gloucestershire & Cotswolds
+    website: http://gloucs.lug.org.uk/
+    established_date: 2000/06
+    status: Active
+    last_update: 12/2009
+    categories: South-West
+    url: http://lug.org.uk/node/144
+    contact_address: "{{ protected_email_addresses.gloucestershirecotswolds_lug_lugmaster }}"
+    contact: Glyn Davies
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/gloucs/
+    permalink: Gloucestershire & Cotswolds
+    match_type: dns only
+    dns_name: gloucs
+    extra_dns_records:
+    - type: A
+      record: 213.138.110.9
+    mail_hosting: mail-in-01
+
+  GreaterLondon:
+    title: Greater London (GLLUG)
+    website: http://www.gllug.org.uk
+    established_date: 1998/08
+    status: Active
+    last_update: 06/2012
+    categories: London
+    url: http://lug.org.uk/node/73
+    contact_address: "{{ protected_email_addresses.gllug_lug_lugmaster }}"
+    contact: Matt Copperwaite
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/gllug
+    permalink: Greater London (GLLUG)
+    dns_name: gllug
+    web_hosting: snm
+    extra_dns_records:
+    - target: gl
+      type: CNAME
+      record: www.gllug.ukfsn.org.
+    - target: www.gl
+      type: CNAME
+      record: www.gllug.ukfsn.org.
+    mail_hosting: mail-in-01
+    email_redirects:
+    - target: "{{ protected_email_addresses.gllug_lug_lugmaster }}"
+      alias:
+      - info
+      - webmaster
+      - lugmaster

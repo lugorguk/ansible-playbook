@@ -1,0 +1,61 @@
+---
+lugs_h:
+  Hants:
+    title: Hants LUG
+    website: http://www.hantslug.org.uk
+    established_date: 1998/06
+    status: Active
+    last_update: 12/2009
+    categories: South-East
+    url: http://lug.org.uk/node/118
+    contact_address: "{{ protected_email_addresses.hants_lug_lugmaster }}"
+    contact: Adam Trickett
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/hants/
+    permalink: Hants
+    match_type: dns only
+    dns_name: hants
+    extra_dns_records:
+    - type: A
+      record: 85.119.82.68
+    - type: CNAME
+      target: mailman.hants
+    - type: MX
+      record: 10 hantslug.org.uk.
+
+  Herefordshire:
+    title: Herefordshire
+    website: http://www.herefordshire.lug.org.uk
+    established_date: 2004/06
+    status: Active
+    last_update: 02/2013
+    categories: West-Midlands
+    url: http://lug.org.uk/node/158
+    contact_address: "{{ protected_email_addresses.herefordshire_lug_lugmaster }}"
+    contact: Julian Robbins
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/herefordshire/
+    permalink: Herefordshire
+    match_type: dns only
+    dns_name: herefordshire
+    extra_dns_records:
+    - record: hlug.org.uk.
+    - target: hereford
+      record: hlug.org.uk.
+    mail_hosting: mail-in-01
+    notes: still has a presence on web-01. Mail sent 2017-11-12 to remove content from there.
+
+  Hertfordshire:
+    title: Hertfordshire
+    website: http://www.herts.lug.org.uk
+    established_date: 2001/01
+    status: Active
+    last_update: 12/2009
+    categories: East
+    url: http://lug.org.uk/node/50
+    contact_address: "{{ protected_email_addresses.hertfordshire_lug_lugmaster }}"
+    contact: Nicolas Pike
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/herts/
+    permalink: Hertfordshire
+    match_type: simple
+    dns_name: herts
+    web_hosting: snm
+    mail_hosting: mail-in-01

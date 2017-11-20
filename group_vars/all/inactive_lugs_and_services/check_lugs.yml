@@ -1,0 +1,70 @@
+---
+check_lugs:
+  Newark:
+    title: Newark
+    website: https://www.facebook.com/groups/284465954978157/
+    established_date: 2001-06-01
+    status: Active
+    notes: DNS does not resolve, but the FB group does - change this to a VIA?
+    last_update: 2016-07-01
+    categories: East-Midlands
+    url: http://lug.org.uk/node/63
+    contact_address: "{{ protected_email_addresses.newark_lug_lugmaster }}"
+    contact: Craig Lynch
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/newark/
+    permalink: Newark
+    match_type: dns only
+    dns_name: newark
+    extra_dns_records:
+    - type: NS
+      record: UK01.EUROPE.CAMELDNS.COM.
+    - type: NS
+      record: US01.AMERICAS.CAMELDNS.COM.
+    - type: NS
+      record: UK02.EUROPE.CAMELDNS.COM.
+
+  Peterborough:
+    title: Peterborough
+    website: http://www.peterborough-lug.org.uk
+    established_date: 2000-01-01
+    status: Check
+    last_checked: 2017-11-12
+    notes: DNS does not resolve, however ML is active. Checking in with lugmaster.
+    last_update: 2012-05-12
+    categories: East
+    url: http://lug.org.uk/node/52
+    contact_address: "{{ protected_email_addresses.peterborough_lug_lugmaster }}"
+    contact: Mark Rogers
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/peterboro/
+    permalink: Peterborough
+    match_type: hosted
+    dns_name: peterborough
+    web_hosting:
+      via: snm
+      to: http://www.peterborough-lug.org.uk
+    mail_hosting: mail-in-01
+    extra_dns_records:
+    - target: peterboro
+
+  Ryedale:
+    title: Ryedale
+    website: http://www.ryedale.lug.org.uk
+    established_date: 2006-01-01
+    status: Check
+    last_checked: 2017-11-12
+    notes: Checked website - seems relevant, however "last meeting" is shown as 2012. Mailing list is dead.
+    last_update: 2010-02-01
+    categories: Yorkshire-and-Humber
+    url: http://lug.org.uk/node/135
+    contact_address: "{{ protected_email_addresses.ryedale_lug_contact }}"
+    contact: Al Girling
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/ryedale/
+    permalink: Ryedale
+    match_type: simple
+    dns_name: ryedale
+    web_hosting: snm
+    mail_hosting: mail-in-01
+    email_redirects:
+    - target: "{{ protected_email_addresses.rydale_lug_lugmaster }}"
+      aliases:
+      - acg

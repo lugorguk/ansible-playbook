@@ -1,0 +1,82 @@
+---
+lugs_r:
+  Rossendale LUG:
+    title: Rossendale LUG
+    website: http://www.rosslug.org.uk
+    established_date: 2010/10
+    status: Active
+    last_update: 02/2014
+    categories: North-West
+    url: http://lug.org.uk/node/174
+    contact_address: "{{ protected_email_addresses.rossendale_lug_lugmaster }}"
+    contact: Jon Archer
+    mailing_list: http://www.rosslug.org.uk/mailman/listinfo/rosslug
+    permalink: Rossendale LUG
+
+  Rugby:
+    title: Rugby LUG
+    website: http://rugby.lug.org.uk/
+    established_date: 2004/01
+    status: Active
+    last_update: 08/2011
+    categories: West-Midlands
+    url: http://lug.org.uk/node/162
+    contact_address: "{{ protected_email_addresses.rugby_lug_contact }}"
+    contact: Nick Morrott
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/rugby
+    permalink: Rugby
+    match_type: hosted
+    dns_name: rugby
+    web_hosting: snm
+    mail_hosting: mail-in-01
+    email_redirects:
+    - target: "{{ protected_email_addresses.rugby_lug_contact }}"
+      aliases:
+      - sfd
+      - enquiries
+    extra_dns_records:
+    - target: test.rugby
+
+  Runcorn Widnes:
+    title: Runcorn Widnes
+    website: http://RuncornWidnes.lug.org.uk
+    established_date: 2011/09
+    status: Starting
+    last_update: 09/2011
+    categories: North-West
+    url: http://lug.org.uk/node/181
+    contact_address: "{{ protected_email_addresses.runcornwidnes_lug_contact }}"
+    contact: Simon Smith
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/runcornwidnes
+    permalink: Runcorn Widnes
+    match_type: simple
+    dns_name: RuncornWidnes
+    web_hosting: snm
+    mail_hosting: mail-in-01
+    email_redirects:
+    - target: "{{ protected_email_addresses.runcornwidnes_lug_lugmaster }}"
+      aliases:
+      - info
+      - webmaster
+      - lugmaster
+
+  Rustington:
+    title: Rustington
+    website: http://www.rustington.lug.org.uk
+    established_date: 2010/10
+    status: Starting
+    last_update: 10/2010
+    categories: South-East
+    url: http://lug.org.uk/node/175
+    contact_address: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+    contact: Frank James
+    permalink: Rustington
+    match_type: hosted
+    dns_name: rustington
+    web_hosting: web01
+    mail_hosting: mail-in-01
+    email_redirects:
+    - target: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+      aliases:
+      - webmaster
+      - lugmaster
