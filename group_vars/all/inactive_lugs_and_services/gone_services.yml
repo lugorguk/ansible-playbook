@@ -1,0 +1,33 @@
+---
+gone_services:
+  cruxppc:
+    dns_name: cruxppc
+    dns_records:
+    - type: A
+      record: 87.74.63.253
+    - target: jbns1
+    - target: jbns2
+    contact: Jay Bennie
+    contact_address: "{{ protected_email_addresses.cruxppc_contact }}"
+    last_checked: 2017-11-13
+    established_date: 2006-01-01
+    notes: Non-responsive
+
+  ucolfaq:
+    title: UK.Comp.OS.Linux FAQ
+    dns_name: ucolfaq
+    extra_dns_records:
+    - type: CNAME
+      record: chiark.greenend.org.uk.
+    contact: Richard Kettlewell
+    contact_address: "{{ protected_email_addresses.ucolfaq_contact }}"
+    last_checked: 2017-11-20
+    notes: Website directs to a valid, but unconfigured host.
+
+  yopy:
+    title: YOPY PDA Linux
+    dns_name: yopy
+    web_hosting: web01
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/yopy
+    notes: Website gone. Mailing list had content in 2008 (site breach) but last "active" thread was 2005.
+    last_checked: 2017-11-20

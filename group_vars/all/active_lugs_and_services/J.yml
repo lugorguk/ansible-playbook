@@ -1,0 +1,15 @@
+---
+lugs_j:
+  Jobs:
+    title: Jobs
+    website: https://mailman.lug.org.uk/mailman/listinfo/linuxjobs/
+    established_date: ''
+    status: Active
+    last_update: 11/2013
+    categories: Other
+    url: http://lug.org.uk/node/100
+    contact_address: "{{ protected_email_addresses.admin_address }}"
+    contact: Lug.org.uk Admins
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/linuxjobs/
+    permalink: Jobs
+    match_type: mailing list only

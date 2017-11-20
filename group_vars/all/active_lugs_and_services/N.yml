@@ -1,0 +1,68 @@
+---
+lugs_n:
+  Northants:
+    title: Northants
+    website: http://www.northants.lug.org.uk
+    established_date: 1998/09
+    status: Active
+    last_update: 12/2009
+    categories: East-Midlands
+    url: http://lug.org.uk/node/65
+    contact_address: "{{ protected_email_addresses.northants_lug_contact }}"
+    contact: Kevin Taylor
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/northants/
+    permalink: Northants
+    match_type: simple
+    dns_name: northants
+    web_hosting: snm
+    mail_hosting: mail-in-01
+
+  NorthEastWorcestershire:
+    title: North-East Worcestershire
+    website: http://www.new.lug.org.uk
+    established_date: 2011/01
+    status: Starting
+    last_update: 12/2011
+    categories: West-Midlands
+    url: http://lug.org.uk/node/177
+    contact_address: "{{ protected_email_addresses.north_east_worcestershire_lug_contact }}"
+    contact: Doug Mills
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/newlug
+    permalink: North-East Worcestershire
+    match_type: hosted
+    dns_name: new
+    web_hosting: web01
+    mail_hosting: mail-in-01
+    staff:
+    - name: Roger Frisby
+      email: "{{ protected_email_addresses.north_east_worcestershire_lug_staff_roger_primary }} / {{ protected_email_addresses.north_east_worcestershire_lug_staff_roger_secondary }}"
+
+  NorthofScotland:
+    title: North of Scotland
+    website: http://nos-lug.org/
+    established_date: ''
+    status: Starting
+    last_update: 12/2009
+    categories: Scotland
+    url: http://lug.org.uk/node/111
+    contact_address: "{{ protected_email_addresses.north_of_scotland_lug_lugmaster }}"
+    contact: Stephen Kenneth Fuller
+    permalink: North-of Scotland
+
+  Nottingham:
+    title: Nottingham
+    website: http://www.nottingham.lug.org.uk
+    established_date: 2000/03
+    status: Active
+    last_update: 05/2012
+    categories: East-Midlands
+    url: http://lug.org.uk/node/66
+    contact_address: "{{ protected_email_addresses.nottingham_lug_contact }}"
+    contact: Martin Lomas
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/nottingham/
+    permalink: Nottingham
+    match_type: dns only
+    extra_dns_records:
+    - type: CNAME
+      record: nlug.ml1.co.uk.
+    mail_hosting: mail-in-01
