@@ -1140,6 +1140,7 @@ gone_lugs:
     mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wishlug/
     permalink: Wigan and St. Helens
     dns_name: wishlug
+    web_hosting:
       via: web01
       to: https://mailman.lug.org.uk/mailman/listinfo/wishlug/
 

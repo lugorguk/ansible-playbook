@@ -13,6 +13,7 @@ lugs_w:
     mailing_list: https://mailman.lug.org.uk/mailman/listinfo/westwales/
     permalink: West Wales
     dns_name: westwales
+    web_hosting:
       via: web01
       to: https://www.facebook.com/groups/117629405065588/
     extra_dns_records:
