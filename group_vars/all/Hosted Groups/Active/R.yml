@@ -1,0 +1,99 @@
+---
+lugs_r:
+  Rossendale LUG:
+    title: Rossendale LUG
+    website: http://www.rosslug.org.uk
+    established_date: 2010/10
+    status: Active
+    last_update: 02/2014
+    categories: North-West
+    contact_address: "{{ protected_email_addresses.rossendale_lug_lugmaster }}"
+    contact: Jon Archer
+    mailing_list: http://www.rosslug.org.uk/mailman/listinfo/rosslug
+    permalink: Rossendale LUG
+
+  Rugby:
+    title: Rugby LUG
+    website: https://rugby.lug.org.uk/
+    established_date: 2004/01
+    status: Active
+    last_update: 08/2011
+    categories: West-Midlands
+    contact_address: "{{ protected_email_addresses.rugby_lug_contact }}"
+    contact: Nick Morrott
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/rugby
+    permalink: Rugby
+    dns_name: rugby
+    web_hosting:
+      via: snm
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.rugby_lug_contact }}"
+      aliases:
+      - sfd
+      - enquiries
+    extra_dns_records:
+    - type: CNAME
+      target: test.rugby
+
+  Runcorn Widnes:
+    title: Runcorn Widnes
+    website: https://RuncornWidnes.lug.org.uk
+    established_date: 2011/09
+    status: Starting
+    last_update: 09/2011
+    categories: North-West
+    contact_address: "{{ protected_email_addresses.runcornwidnes_lug_contact }}"
+    contact: Simon Smith
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/runcornwidnes
+    permalink: Runcorn Widnes
+    dns_name: RuncornWidnes
+    web_hosting:
+      via: snm
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.runcornwidnes_lug_lugmaster }}"
+      aliases:
+      - info
+      - webmaster
+      - lugmaster
+
+  Rustington:
+    title: Rustington
+    website: https://www.rustington.lug.org.uk
+    established_date: 2010/10
+    status: Starting
+    last_update: 10/2010
+    categories: South-East
+    contact_address: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+    contact: Frank James
+    permalink: Rustington
+    dns_name: rustington
+    web_hosting:
+      via: web-01
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+      aliases:
+      - webmaster
+      - lugmaster
+
+  Ryedale:
+    title: Ryedale
+    website: https://www.ryedale.lug.org.uk
+    established_date: "2006-01-01"
+    status: Check
+    last_checked: "2017-11-12"
+    notes: Checked website - seems relevant, however "last meeting" is shown as 2012. Mailing list is dead.
+    last_update: "2010-02-01"
+    categories: Yorkshire-and-Humber
+    contact: Al Girling
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/ryedale/
+    permalink: Ryedale
+    dns_name: ryedale
+    web_hosting: "{{ primary_suffix }}"
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.rydale_lug_lugmaster }}"
+      aliases:
+      - acg

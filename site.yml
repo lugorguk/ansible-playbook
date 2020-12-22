@@ -1,0 +1,5 @@
+---
+- hosts: admin
+  tasks:
+  - include_role:
+      name: lugorguk.bind

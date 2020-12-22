@@ -1,0 +1,140 @@
+gone_lugs_s:
+  scarborough:
+    title: Scarborough LUG
+    dns_name: scarborough
+    extra_dns_records:
+    - type: A
+      record: 74.54.209.239
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/scarborough
+    notes: Website gone. Mailing list last post 2015
+    last_checked: "2017-11-19"
+
+  schools:
+    title: Schools LUG
+    dns_name: schools
+    web_hosting: "{{ primary_suffix }}"
+    notes: Website gone
+    last_checked: "2017-11-19"
+
+  scotborders:
+    title: Scottish Borders LUG
+    dns_name: scarborough
+    web_hosting: "{{ primary_suffix }}"
+    notes: Website gone
+    last_checked: "2017-11-19"
+
+  SouthDerby:
+    title: South Derbyshire LUG
+    dns_name: sderby
+    web_hosting: "{{ primary_suffix }}"
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sderby/
+    last_checked: "2017-11-19"
+    notes: Website gone. Last mailing list post 2014.
+
+  Shetland:
+    title: Shetland LUG
+    web_hosting: "{{ primary_suffix }}"
+    dns_name: shetland
+    notes: website gone.
+    last_checked: "2017-11-20"
+
+  sl:
+    web_hosting: "{{ primary_suffix }}"
+    dns_name: sl
+    notes: Website gone.
+    last_checked: "2017-11-20"
+
+  sluguk:
+    web_hosting:
+      via: web-01
+      to: http://www.btinternet.com/~homebrew/sluguk/
+    dns_name: sluguk
+    notes: Redirected URL gone.
+    last_checked: "2017-11-20"
+
+  southsea:
+    title: Southsea LUG
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/southsea
+    notes: email redirects remain, mailing list last received traffic 2012. No website nor hosting.
+    last_checked: "2017-11-19"
+    email_redirects:
+    - target: "{{ protected_email_addresses.southsea_lug_lugmaster }}"
+      aliases:
+      - info
+      - webmaster
+      - lugmaster
+
+  southwest:
+    title: South West LUG
+    web_hosting:
+      on: snm
+      type: static
+    dns_name: southwest
+    notes: Website still exists, but shows "closed" in 2004.
+    last_checked: "2017-11-20"
+
+  ssom:
+    title: South Somerset LUG
+    host: web-01
+    contact: Darren Mallinson
+    contact_address: "{{ protected_email_addresses.ssom_lug_lugmaster }}"
+    last_checked: "2017-11-20"
+    notes: Website gone. Mailing list shows last post in 2009.
+
+  StAndrews:
+    title: St. Andrews, Fife LUG
+    website: https://standrews.lug.org.uk
+    established_date: "2010-01-01"
+    status: Gone
+    last_checked: "2017-11-12"
+    notes: Website shows "it works", mailing list has a post 2015 showing just keeping the ML open waiting for someone to take over.
+    last_update: "2010-01-01"
+    categories: Scotland
+    contact_address: "{{ protected_email_addresses.saint_andrews_lug_contact }}"
+    contact: Rory Beaton
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/standrews
+    permalink: St. Andrews
+    dns_name: standrews
+    web_hosting: "{{ primary_suffix }}"
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.saint_andrews_lug_lugmaster }}"
+      aliases:
+      - admin
+
+  Students:
+    title: Students
+    status: Gone
+    last_update: "2010-04-01"
+    last_checked: "2017-11-12"
+    notes: Website gone, ML gone.
+    categories: Other
+    contact_address: "{{ protected_email_addresses.students_lug_lugmaster }}"
+    contact: Jamie Davies
+    permalink: Students
+    dns_name: Students
+    web_hosting: "{{ primary_suffix }}"
+    mail_hosting: "{{ default_mx }}"
+
+  Swindon:
+    title: Swindon
+    website: https://swinlug.org.uk
+    established_date: "2016-02-01"
+    status: Gone
+    notes: Redirect non-responsive. Mailing list inactive
+    last_checked: "2017-11-12"
+    last_update: "2016-09-01"
+    categories: South-West
+    contact_address: "{{ protected_email_addresses.swindon_lug_lugmaster }}"
+    contact: Tom Earl
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/swindon
+    permalink: Swindon
+    dns_name: Swindon
+    web_hosting: "{{ primary_suffix }}"
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.swindon_lug_lugmaster }}"
+      aliases:
+      - info
+      - webmaster
+      - lugmaster

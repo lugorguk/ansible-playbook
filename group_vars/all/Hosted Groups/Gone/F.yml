@@ -1,0 +1,12 @@
+gone_lugs_f:
+  fod:
+    dns_name: fod
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-14"
+    notes: Website gone.
+
+  fuengirola:
+    dns_name: fuengirola
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-14"
+    notes: Website gone.

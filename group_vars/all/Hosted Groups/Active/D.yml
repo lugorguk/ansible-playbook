@@ -1,0 +1,88 @@
+---
+lugs_d:
+  DevonCornwall:
+    title: Devon and Cornwall
+    website: http://dclug.org.uk/
+    established_date: 1999/10
+    status: Active
+    last_update: 12/2009
+    categories: South-West
+    contact_address: "{{ protected_email_addresses.devoncornwall_lug_lugmaster }}"
+    contact: DCLUG
+    mailing_list: http://mailman.dcglug.org.uk/listinfo/list
+    permalink: lugs/South-West/Devon and Cornwall/
+    location:
+      latitude: 50.38
+      longitude: -4.14
+
+  DoncasterHackspace:
+    title: Doncaster Hackspace
+    website: https://dhs.lug.org.uk
+    established_date: 2020/10
+    status: Active
+    last_update: 10/2020
+    categories: Yorkshire-and-Humber
+    contact_address: "{{ protected_email_addresses.doncasterhackspace_lugmaster }}"
+    contact: LUG Master
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/doncaster
+    permalink: lugs/Yorkshire-and-Humber/Doncaster-Hackspace/
+    location:
+      latitude: 53.52
+      longitude: -1.13
+    web_hosting:
+      via: snm
+      to: https://www.doncasterhackspace.org.uk/?page_id=275
+    mail_hosting: "{{ default_mx }}"
+
+  Dorset:
+    title: Dorset
+    website: https://dorset.lug.org.uk/wiki/
+    established_date: 2000/05
+    status: Active
+    last_update: 12/2009
+    categories: South-West
+    contact_address: "{{ protected_email_addresses.dorset_lug_contact }}"
+    contact: LUG Master
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/dorset
+    permalink: lugs/South-West/Dorset/
+    location:
+      latitude: 50.75
+      longitude: -2.34
+    dns_name: dorset
+    web_hosting: 
+      on: snm
+      type: dokuwiki
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.dorset_lug_lugmaster }}"
+      alias:
+      - lugmaster
+      - postmaster
+    - target: "{{ protected_email_addresses.dorset_contact }}"
+      alias:
+      - ekgbixdi
+
+  Durham:
+    title: Durham
+    website: http://www.nelug.org.uk
+    established_date: 1999/01
+    status: Active
+    last_update: 12/2009
+    categories: North-East
+    contact_address: "{{ protected_email_addresses.durham_lug_lugmaster }}"
+    contact: Richard Patterson
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/nelug/
+    permalink: Durham
+    dns_name: durham
+    web_hosting:
+      via: web-01
+      to: http://www.nelug.org.uk
+    extra_dns_records:
+    - type: CNAME
+      target: ne
+    - type: CNAME
+      target: www.ne
+    - type: CNAME
+      target: nelug
+    - type: CNAME
+      target: www.nelug

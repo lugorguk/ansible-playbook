@@ -1,0 +1,149 @@
+---
+bind_copies: # Is used for ACL and NS records
+  bitfolkns:
+    "a.authns.bitfolk.com":
+    - "2001:ba8:1f1:f019::53"
+    - "85.119.80.222"
+    "b.authns.bitfolk.com":
+    - "2001:4978:f:f2::2"
+    - "209.237.247.198"
+    "c.authns.bitfolk.com":
+    - "2001:4978:f:392::2"
+    - "209.20.91.73"
+
+primary_suffix: lug.org.uk
+secondary_suffix: glug.org.uk
+tertiary_suffix: lugs.org.uk
+all_suffixes:
+- lug.org.uk
+- glug.org.uk
+- lugs.org.uk
+default_mx:
+- "mail-in-01.{{ primary_suffix }}"
+- "mail-in-01.{{ secondary_suffix }}"
+default_spf: "v=spf1 a mx -all"
+default_rp: "hostmaster.{{ primary_suffix }}. {% for name in all_suffixes | default([]) %}{{ name }}. {% endfor %}"
+
+dns_suffixes:
+  "lug.org.uk":
+    names:
+    - lug.org.uk
+    - glug.org.uk
+    - lugs.org.uk
+  "ogg.camp":
+    names:
+    - ogg.camp
+    - oggcamp.org
+    - oggcamp.com
+    - oggcamp.net
+
+dns:
+  "lug.org.uk":
+    services:
+      ns1:
+        hosts:
+        - "{{ hosts.admin }}"
+      "@":
+        ns: |
+          [
+            "ns1.lug.org.uk.",
+            "ns1.glug.org.uk.",
+            {% for copy_group in bind_copies | default({}) | dict2items %}
+              {% for copy in copy_group.value | default({}) | dict2items %}
+                "{{ copy.key }}.",
+              {% endfor %}
+            {% endfor %}
+          ]
+        mx: "{{ default_mx }}"
+        rp: "{{ default_rp }}"
+        txt:
+        - "UK Linux User Groups"
+        - "google-site-verification=vbowpMgzwoyxTcO_k24S1vNJKHRABaLCh6Si7iq3F8U"
+        - "google-site-verification=lX0O2hYl_fTlbYTmfZpqt1lsiMnxAb7y7HwgLffYIZs"
+        - "google-site-verification=TARrHMztTzZ2e7ROLDcEMw0T8G7GNeI_McfNIWpunk0"
+        spf:
+        - "v=spf1 a:down.lug.org.uk a mx -all"
+        hosts:
+        - "{{ hosts.snm }}"
+      "_psl":
+        txt: "https://github.com/publicsuffix/list/pull/514"
+      down:
+        cname: "do.sprig.gs."
+        aliases:
+        - www.down
+      irc:
+        cname: "irc.blitzed.org."
+        aliases:
+        - penguin
+    hosts: "{{ hosts }}"
+    hosted_services: "{{ Active_and_Inactive_Groups }}"
+
+  "ogg.camp":
+    services:
+      "@":
+        hosts:
+        - "{{ hosts.snm }}"
+        ns: |
+          [
+            "ns1.lug.org.uk.",
+            "ns1.glug.org.uk.",
+            {% for copy_group in bind_copies | default({}) | dict2items %}
+              {% for copy in copy_group.value | default({}) | dict2items %}
+                "{{ copy.key }}.",
+              {% endfor %}
+            {% endfor %}
+          ]
+        mx: "{{ default_mx }}"
+        rp: "{{ default_rp }}"
+        txt:
+        - "OggCamp"
+        spf:
+        - "{{ default_spf }}"
+        aliases:
+        - www
+      cfp:
+        cname: jon.sprig.gs.
+      screen:
+        v4: 163.172.185.51
+        aliases:
+        - screens
+
+hosts:
+  admin:
+    v6: "2001:ba8:1f1:f08c::2/64"
+    v4: "85.119.83.30/21"
+    aliases:
+    - lugadmin
+    - lugadmin.dnuk
+    - lugadmin.happy
+    - rt
+  "mail-in-01":
+    v6: "2001:ba8:1f1:f08d::2/64"
+    v4: "85.119.83.33/21"
+  mailman:
+    v6: "2001:ba8:1f1:f090::2/64"
+    v4: "85.119.83.42/21"
+    spf: "v=spf1 a mx a:mailman.lug.org.uk a:mailman.glug.org.uk a:web-01.lug.org.uk a:web-01.glug.org.uk -all"
+    aliases:
+    - lists
+  "web-01":
+    v6: "2001:ba8:1f1:f091::2/64"
+    v4: "85.119.83.68/21"
+    aliases:
+      # Legacy - Propose these are abandoned.
+    - mail
+    - ftp
+    - pop
+    - smtp
+    - pop3
+    - login
+      # VERY LEGACY CNAMEs - Propose these are abandoned.
+    - xinit
+    - dnuk
+    - happy
+  snm:
+    v6: "2001:ba8:1f1:f075::2/64"
+    v4: "85.119.82.169/21"
+    aliases:
+    - www
+    - testsite

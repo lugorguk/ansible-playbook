@@ -1,0 +1,63 @@
+---
+lugs_w:
+  WestWales:
+    title: West Wales
+    website: https://www.facebook.com/groups/117629405065588/
+    established_date: 2000/01
+    status: Active
+    last_update: 01/2015
+    categories: Wales
+    contact_address: "{{ protected_email_addresses.westwales_lug_contact }}"
+    contact: Mike Sheldon
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/westwales/
+    permalink: West Wales
+    dns_name: westwales
+    web_hosting:
+      via: web-01
+      to: https://www.facebook.com/groups/117629405065588/
+    extra_dns_records:
+    - type: CNAME
+      target: west-wales
+
+  WestYorkshire:
+    title: West Yorkshire
+    website: http://www.wylug.org.uk/
+    established_date: 1998/01
+    status: Active
+    last_update: 04/2010
+    categories: Yorkshire-and-Humber
+    contact_address: "{{ protected_email_addresses.wylug_lug_contact }}"
+    contact: WYLUG
+    mailing_list: http://www.wylug.org.uk/about/mailing-lists/
+    permalink: West Yorkshire
+    dns_name: wylug
+    extra_dns_records:
+    - type: A
+      record: 129.11.144.129
+    - type: A
+      target: www.wylug
+      record: 129.11.144.5
+    - type: A
+      target: list.wylug
+      record: 195.92.249.251
+    - type: MX
+      record: 10 list.wylug.lug.org.uk.
+    last_checked: "2017-11-20"
+    notes: None of the extra DNS names resolve. however there seems to be a separate website. Perhaps we should point this record to theirs?
+
+  Wolverhampton:
+    title: Wolverhampton
+    website: http://wolveslug.org.uk/
+    established_date: 1999/11
+    status: Active
+    last_checked: "2017-11-11"
+    last_update: 12/2009
+    categories: West-Midlands
+    contact_address: "{{ protected_email_addresses.wolverhampton_lug_lugmaster }}"
+    contact: David Morley
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wolveslug/
+    permalink: Wolverhampton
+    dns_name: wolveslug
+    web_hosting:
+      via: web-01
+      to: http://wolveslug.org.uk/

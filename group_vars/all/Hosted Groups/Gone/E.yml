@@ -1,0 +1,76 @@
+gone_lugs_e:
+  EastGrinstead:
+    title: East Grinstead
+    website: https://eg.lug.org.uk
+    established_date: "2006-11-01"
+    status: Gone
+    notes: DNS does not resolve, neither eg.lug.org.uk nor eglug.org.uk
+    last_checked: "2017-11-11"
+    last_update: "2009-12-01"
+    categories: South-East
+    contact_address: "{{ protected_email_addresses.eastgrinstead_lug_lugmaster }}"
+    contact: Frances Fleming
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/eg/
+    permalink: East Grinstead
+    dns_name: eg
+    extra_dns_records:
+    - type: A
+      record: 82.110.105.78
+    mail_hosting: "{{ default_mx }}"
+
+  Essex:
+    title: Essex LUG
+    dns_name: essex
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-13"
+    notes: Website gone.
+
+  euslug:
+    title: Exeter University Student LUG
+    dns_name: euslug
+    web_hosting:
+      via: "{{ primary_suffix }}"
+      to: http://slug.urgusabic.net
+    last_checked: "2017-11-14"
+    notes: Website gone.
+
+  Exeslug:
+    title: Exeslug LUG
+    dns_name: Exeslug
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-14"
+    notes: Website gone.
+    extra_dns_records:
+    - type: CNAME
+      target: exes
+
+  eyorks:
+    title: East Yorkshire LUG
+    dns_name: eyorks
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-14"
+    notes: Website gone.
+
+  Exeter:
+    title: Exeter
+    website: https://exeter.lug.org.uk
+    established_date: "2012-04-01"
+    status: Gone
+    last_checked: "2017-11-11"
+    notes: Website 404. Mailing list inactive. May have been replaced by Raspberry Pi group?
+    last_update: "2012-04-01"
+    categories: South-West
+    contact_address: "{{ protected_email_addresses.exeter_lug_lugmaster }}"
+    contact: Rick Timmis
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/exeter
+    permalink: Exeter
+    extra_dns_records:
+    - type: A
+      record: 178.63.103.150
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.exeter_lug_lugmaster }}"
+      alias:
+      - info
+      - lugmaster
+      - webmaster

@@ -1,0 +1,26 @@
+letter_array: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+Active_Groups: |-
+  {
+    {% for alphabet_index in letter_array %}
+      {% for lug in lookup('vars', 'lugs_' + alphabet_index, default={}) | dict2items %}
+        '{{ lug.key }}': {{ lug.value }},
+      {% endfor %}
+    {% endfor %}
+  }
+Inactive_Groups: |-
+  {
+    {% for alphabet_index in letter_array %}
+      {% for lug in lookup('vars', 'gone_lugs_' + alphabet_index, default={}) | dict2items %}
+        '{{ lug.key }}': {{ lug.value }},
+      {% endfor %}
+    {% endfor %}
+  }
+Active_and_Inactive_Groups: |-
+  {
+    {% for item in Active_Groups | dict2items %}
+      '{{ item.key }}': {{ item.value }},
+    {% endfor %}
+    {% for item in Inactive_Groups | dict2items %}
+      '{{ item.key }}': {{ item.value }},
+    {% endfor %}
+  }

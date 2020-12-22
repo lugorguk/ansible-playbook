@@ -1,0 +1,69 @@
+---
+gone_lugs_a:
+  Accrington:
+    notes: Mailing list and DNS only exists.
+    last_checked: 2017-11-12
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/accrington/
+    contact_address: "{{ protected_email_addresses.accrington_lug_lugmaster }}"
+    contact: Ian Entwistle
+
+    dns_name: accrington
+    web_hosting: web-01
+
+  allug:
+    notes: No presence on lug.org.uk services, aside from DNS
+    last_checked: 2017-11-12
+
+    dns_name: allug
+    web_hosting: web-01
+
+  armedforces:
+    notes: Web host contains content, but is basically a pointer to a mailing list which has been removed. No mail aliases exist.
+    last_checked: 2017-11-12
+
+    dns_name: armedforces
+    web_hosting: snm
+    mail_hosting: "{{ default_mx }}"
+
+  autistic:
+    notes: Previously existed. Mailing list still there (no activity since 2013). No website.
+    last_checked: 2017-11-12
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/autistic
+    contact: Steve Parkes
+    contact_address: "{{ protected_email_addresses.autistic_lug_lugmaster }}"
+
+    dns_name: autistic
+    web_hosting: 
+      via: web-01
+      to: https://mailman.lug.org.uk/mailman/listinfo/autistic
+    mail_hosting: "{{ default_mx }}"
+
+  aylesbury:
+    notes: No hosting, no mailing list, no DNS
+    last_checked: 2017-11-12
+
+  ayrshire:
+    permalink: lugs/Scotland/Ayrshire/
+    location:
+      latitude: 55.4545748
+      longitude: -4.6576824
+
+    notes: web site not used. mailing list unused
+    last_checked: 2017-11-13
+    established_date: 2013-07-03
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/ayrshire
+    contact: Harjinder Singh
+    contact_address: "{{ protected_email_addresses.ayrshire_lug_lugmaster }}"
+
+    dns_name: ayrshire
+    web_hosting: snm
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.ayrshire_lug_lugmaster }}"
+      alias:
+      - info
+      - webmaster
+      - lugmaster

@@ -1,0 +1,96 @@
+---
+lugs_c:
+  Chelmer:
+    title: Chelmer Linux and Android Users Group
+    website: http://www.linkedin.com/groups/Chelmer-Linux-Android-Users-Group-3963756
+    established_date: 2011/06
+    status: Starting
+    last_update: 06/2011
+    categories: South-East
+    contact_address: "{{ protected_email_addresses.chelmer_lug_contact }}"
+    contact: Martin Houston
+    permalink: Chelmer Linux and Android Users Group
+    dns_name: chelmer
+    web_hosting:
+      via: snm
+      to: http://www.linkedin.com/groups/Chelmer-Linux-Android-Users-Group-3963756
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.chelmer_lug_lugmaster }}"
+      alias:
+      - info
+      - webmaster
+      - lugmaster
+
+  Chester:
+    title: Chester
+    website: http://chesterlug.org.uk/
+    established_date: 2006/07
+    status: Active
+    last_update: 09/2012
+    categories: North-West
+    contact_address: "{{ protected_email_addresses.chester_lug_lugmaster }}"
+    contact: Les Pritchard
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/chester/
+    permalink: lugs/North-West/Chester/
+    location:
+      latitude: 53.19
+      longitude: -2.89
+    dns_name: Chester
+    web_hosting:
+      via: web-01
+      to: http://www.chesterlug.org.uk/
+    mail_hosting: "{{ default_mx }}"
+
+  Colchester:
+    title: Colchester
+    website: https://www.colchester.lug.org.uk
+    established_date: 2004/11
+    status: Active
+    last_update: 12/2009
+    categories: East
+    contact_address: "{{ protected_email_addresses.colchester_lug_lugmaster }}"
+    contact: Gary Kearley
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/colchester/
+    permalink: lugs/East/Colchester/
+    location:
+      latitude: 51.90
+      longitude: 0.89
+    extra_dns_records:
+    - type: A
+      record: 178.63.103.150
+    mail_hosting: "{{ default_mx }}"
+
+  Coventry:
+    title: Coventry
+    website: http://www.covlug.org.uk/
+    established_date: 2001/05
+    status: Active
+    last_update: 03/2014
+    categories: West-Midlands
+    contact_address: "{{ protected_email_addresses.coventry_lug_lugmaster }}"
+    contact: Darren Austin
+    mailing_list: http://www.covlug.org.uk/mailinglist.html
+    permalink: lugs/West-Midlands/Coventry/
+    location:
+      latitude: 52.41
+      longitude: -1.52
+    dns_name: Coventry
+    web_hosting:
+      via: web-01
+      to: http://www.covlug.org.uk/
+    mail_hosting: "{{ default_mx }}"
+
+  CowleyClubBrighton:
+    title: Cowley Club, Brighton
+    website: https://cowley.club/news/event/free-software-clinic/
+    established_date: ''
+    status: Active
+    last_update: 10/2015
+    categories: South-East
+    contact_address: "{{ protected_email_addresses.cowleyclubbrighton_contact }}"
+    contact: Cowley Library Volunteers
+    permalink: lugs/South-East/Cowley Club, Brighton/
+    location:
+      latitude: 50.8303
+      longitude: -0.1362

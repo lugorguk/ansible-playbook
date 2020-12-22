@@ -1,0 +1,44 @@
+---
+lugs_a:
+  Aberdeen:
+    established_date: 2002-12-01
+    last_update: 2016-09-01
+    last_checked: 2020-12-01
+    status: Active
+
+    title: Aberdeen LUG
+    categories: Scotland
+    permalink: lugs/Scotland/Aberdeen/
+    location:
+      latitude: 57.15
+      longitude: -2.09
+
+    website: https://www.aberlug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/aberdeen/
+    contact_address: "{{ protected_email_addresses.aberdeen_lug_lugmaster }}"
+    contact: Mark McRitchie
+
+    dns_name: aberdeen
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: web-01
+      to: https://www.aberlug.org.uk
+
+  Anglian:
+    title: Anglian LUG
+    categories: East
+
+    established_date: 1999-05-01
+    last_checked: 2020-12-01
+    last_update: 2017-10-01
+    status: Active
+
+    website: https://www.alug.org.uk
+    mailing_list: http://lists.alug.org.uk/mailman/listinfo/main
+    contact_address: "{{ protected_email_addresses.anglian_lug_lugmaster }}"
+    contact: ALUG Admin Team
+
+    permalink: lugs/East/Anglian LUG/
+    location:
+      latitude: 52.63
+      longitude: 1.30

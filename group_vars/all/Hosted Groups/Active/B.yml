@@ -1,0 +1,145 @@
+---
+lugs_b:
+  Berkshire:
+    established_date: 1995-06-01
+    last_update: 2009-12-01
+    last_checked: 2017-11-11
+    status: Active
+
+    title: Berkshire & Thames Valley ("Silicon Corridor")
+    categories: South-East
+    permalink: lugs/South-East/Berkshire and Thames Valley - Silicon Corridor/
+    location:
+      latitude: 51.45
+      longitude: -0.98
+
+    website: http://sclug.org.uk
+    mailing_list: http://sclug.org.uk/mailman/listinfo
+    contact_address: "{{ protected_email_addresses.berkshire_lug_lugmaster }}"
+    contact: Tom Dawes-Gamble
+
+  Birmingham:
+    established_date: 2001-06-01
+    last_update: 2016-09-01
+    last_checked: 2017-11-11
+    status: Active
+
+    title: Birmingham
+    categories: West-Midlands
+    permalink: lugs/West-Midlands/Birmingham/
+    location:
+      latitude: 52.49
+      longitude: -1.89
+
+    website: https://birmingham.lug.org.uk
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/sb
+    contact_address: "{{ protected_email_addresses.birmingham_lug_lugmaster }}"
+    contact: LUG Master
+    
+    dns_name: birmingham
+    extra_dns_records:
+    - type: NS
+      record: ns-50.awsdns-06.com.
+    - type: NS
+      record: ns-1963.awsdns-53.co.uk.
+    - type: NS
+      record: ns-1241.awsdns-27.org.
+    - type: NS
+      record: ns-772.awsdns-32.net.
+    - type: NS
+      target: sb
+      record: ns-1400.awsdns-47.org.
+    - type: NS
+      target: sb
+      record: ns-211.awsdns-26.com.
+    - type: NS
+      target: sb
+      record: ns-623.awsdns-13.net.
+    - type: NS
+      target: sb
+      record: ns-1991.awsdns-56.co.uk.
+
+  Blackpool:
+    established_date: 2004-01-01
+    last_update: 2015-11-01
+    last_checked: 2017-11-11
+    status: Active
+
+    title: Blackpool
+    categories: North-West
+    permalink: lugs/North-West/Blackpool/
+    location:
+      latitude: 53.82
+      longitude: -3.04
+
+    website: https://blackpoolmakerspace.wordpress.com/
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/blackpool/
+    contact_address: "{{ protected_email_addresses.blackpool_lug_lugmaster }}"
+    contact: Mike Hewitt
+
+    dns_name: blackpool
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: web-01
+      to: https://blackpoolmakerspace.wordpress.com/
+
+  Bradford:
+    established_date: 2008-08-01
+    last_update: 2009-12-01
+    last_checked: 2017-11-11
+    status: Active
+
+    title: Bradford
+    categories: Yorkshire-and-Humber
+    permalink: lugs/Yorkshire-and-Humber/Bradford/
+    location:
+      latitude: 53.80
+      longitude: -1.76
+
+    website: http://bradlug.co.uk/
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bradford/
+    contact_address: "{{ protected_email_addresses.bradford_lug_lugmaster }}"
+    contact: David Carpenter
+
+    dns_name: Bradford
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: snm
+      to: http://bradlug.co.uk/
+
+  Bristol:
+    established_date: 1998-06-01
+    last_checked: 2017-11-11
+    last_update: 2011-11-01
+    status: Active
+
+    title: Bristol and Bath
+    categories: South-West
+    permalink: lugs/South-West/Bristol and Bath/
+    location:
+      latitude: 51.45
+      longitude: -2.59
+
+    website: https://www.bristol.lug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bristol/
+    contact_address: "{{ protected_email_addresses.bristol_lug_lugmaster_alternate }}"
+    contact: Dave Donaghy
+
+    dns_name: bristol
+    extra_dns_records:
+    - type: NS
+      record: ns1.digitalocean.com.
+    - type: NS
+      record: ns2.digitalocean.com.
+    - type: NS
+      record: ns3.digitalocean.com.
+    # Historic Records
+    # - type: A
+    #   record: 77.72.0.86
+    # email_redirects:
+    # - target: "{{ protected_email_addresses.bristol_lug_lugmaster }}"
+    #   alias:
+    #   - info
+    #   - webmaster
+    #   - lugmaster
+    #   - contact

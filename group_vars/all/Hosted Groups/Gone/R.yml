@@ -1,0 +1,8 @@
+gone_lugs_r:
+  rhonddacynontaff:
+    title: Rhonddacynontaff LUG
+    dns_name: rhonddacynontaff
+    web_hosting: "{{ primary_suffix }}"
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/rhonddacynontaff
+    notes: Website gone. Mailing list last post 2009
+    last_checked: "2017-11-19"

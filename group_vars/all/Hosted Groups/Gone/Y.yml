@@ -1,0 +1,24 @@
+gone_lugs_y:
+  yopy:
+    title: YOPY PDA Linux
+    dns_name: yopy
+    web_hosting: "{{ primary_suffix }}"
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/yopy
+    notes: Website gone. Mailing list had content in 2008 (site breach) but last "active" thread was 2005.
+    last_checked: "2017-11-20"
+
+  york:
+    dns_name: "york"
+    extra_dns_records:
+    - type: A
+      record: 85.214.55.250
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/york
+    last_checked: "2017-11-20"
+    notes: Website gone. Last mailing list activity 2014.
+
+  young:
+    dns_name: "young"
+    title: "Young LUG"
+    web_hosting: "{{ primary_suffix }}"
+    last_checked: "2017-11-20"
+    notes: Website gone.

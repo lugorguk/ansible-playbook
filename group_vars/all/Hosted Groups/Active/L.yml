@@ -1,0 +1,65 @@
+---
+lugs_l:
+  Lincolnshire:
+    title: Lincolnshire LUG
+    website: http://lincslug.org.uk
+    established_date: ''
+    status: Starting
+    last_update: 03/2014
+    categories: East-Midlands
+    contact_address: "{{ protected_email_addresses.lincolnshire_lug_lugmaster }}"
+    contact: Iain Baker
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/lincs/
+    permalink: Lincolnshire
+    dns_name: lincs
+    web_hosting:
+      via: web-01
+      to: http://lincslug.org.uk
+    mail_hosting: "{{ default_mx }}"
+
+  Lincoln:
+    title: Lincoln
+    website: http://lincolnlug.org.uk
+    established_date: 2011/08
+    status: Active
+    last_update: 09/2016
+    categories: East-Midlands
+    contact_address: "{{ protected_email_addresses.lincoln_lug_lugmaster }}"
+    contact: Becky Newborough
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/lincoln
+    permalink: Lincoln
+    dns_name: lincoln
+    web_hosting: 
+      via: snm
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.lincoln_lug_lugmaster }}"
+      aliases:
+      - info
+      - webmaster
+      - lugmaster
+
+  LivLUG:
+    title: Liverpool (LivLUG)
+    website: http://www.livlug.org.uk
+    established_date: 2004/11
+    status: Active
+    last_update: 01/2015
+    categories: North-West
+    contact_address: "{{ protected_email_addresses.liverpool_lug_lugmaster }}"
+    contact: Neil Bothwick
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/liverpool/
+    permalink: Liverpool (LivLUG)
+    dns_name: liv
+    web_hosting:
+      via: snm
+      to: http://www.livlug.org.uk
+    mail_hosting: "{{ default_mx }}"
+    staff:
+    - name: Bob Ham
+      email: "{{ protected_email_addresses.liverpool_lug_staff_bob }}"
+    extra_dns_records:
+    - type: CNAME
+      target: livlug
+    - type: CNAME
+      target: liverpool

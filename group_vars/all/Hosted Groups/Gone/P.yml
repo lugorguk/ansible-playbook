@@ -1,0 +1,9 @@
+gone_lugs_p:
+  Plymouth:
+    title: Plymouth LUG
+    dns_name: plymouth
+    web_hosting: "{{ primary_suffix }}"
+    notes: Website gone.
+    last_checked: "2017-11-19"
+    contact: Anthony Bradley
+    contact_address: "{{ protected_email_addresses.plymouth_lug_lugmaster }}"

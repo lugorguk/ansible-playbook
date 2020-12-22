@@ -1,0 +1,21 @@
+---
+lugs_e:
+  Edinburgh:
+    title: Edinburgh
+    website: http://www.edlug.org.uk/
+    established_date: 1998/03
+    status: Active
+    last_update: 03/2013
+    categories: Scotland
+    contact_address: "{{ protected_email_addresses.edinburgh_lug_lugmaster }}"
+    contact: Jan Goulding
+    mailing_list: http://www.edlug.org.uk/list_faq.html#howtojoin
+    permalink: Edinburgh
+    dns_name: edinburgh
+    web_hosting:
+      via: web-01
+      to: http://www.edlug.org.uk/
+    extra_dns_records:
+    - type: CNAME
+      target: ed
+    mail_hosting: "{{ default_mx }}"

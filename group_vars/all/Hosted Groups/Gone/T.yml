@@ -1,0 +1,27 @@
+gone_lugs_t:
+  Thanet:
+    title: Thanet Linux User Group
+    website: https://mailman.lug.org.uk/mailman/listinfo/thanet/
+    established_date: "2004-01-01"
+    status: Gone
+    notes: No website, mailing list inactive since 2011.
+    last_checked: "2017-11-12"
+    last_update: "2010-04-01"
+    categories: South-East
+    contact_address: "{{ protected_email_addresses.thanet_lug_lugmaster }}"
+    contact: Matthew Macdonald-Wallace
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/thanet/
+    permalink: Thanet Linux User Group
+
+  trlinux:
+    dns_name: trlinux
+    web_hosting: "{{ primary_suffix }}"
+    notes: website gone.
+    last_checked: "2017-11-20"
+
+  tslug:
+    dns_name: tslug
+    title: Truro School LUG
+    web_hosting: "{{ primary_suffix }}"
+    notes: website gone.
+    last_checked: "2017-11-20"

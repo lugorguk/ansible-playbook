@@ -1,0 +1,152 @@
+---
+gone_lugs_b:
+  Bassetlaw:
+    established_date: 2004-10-01
+    last_checked: 2017-11-11
+    last_update: 2010-10-01
+    status: Gone
+
+    title: Bassetlaw
+    categories: East-Midlands
+    permalink: Bassetlaw
+
+    website: https://www.basset.lug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bassetlug/
+    contact_address: "{{ protected_email_addresses.bassetlug_lug_lugmaster }}"
+    contact: Danny Roberts
+
+    dns_name: basset
+    web_hosting:
+      via: "{{ primary_suffix }}"
+      to: http://bassetlug.org.uk
+      notes: Via php file in /home/groups/basset/public_html/index.php
+    mail_hosting: "{{ default_mx }}"
+
+  bedford:
+    notes: Mailing list indicates it is inactive, Website is last updated 2010.
+    last_checked: 2017-11-13
+    status: presumed-gone
+
+    title: Bedfordshire LUG
+
+    website: https://bedford.lug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/beds/
+
+    dns_name: bedford
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      on: snm
+    extra_dns_records:
+    - type: CNAME
+      target: beds
+    - type: CNAME
+      target: www.beds
+
+  beverley:
+    notes: No web content. Mailing list exists but inactive since 2010.
+    last_checked: "2017-11-13"
+
+    title: Beverley LUG
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/beverley/
+    
+  Belfast:
+    notes: Hosting Account suspended
+    established_date: "1999-09-01"
+    last_checked: "2017-11-11"
+    last_update: "2009-12-01"
+    status: Gone
+
+    title: Belfast
+    categories: Northern-Ireland
+    permalink: Belfast
+
+    website: http://www.belfastlinux.org
+    mailing_list: http://www.belfastlinux.org/wiki/Mailing_list
+    contact_address: "{{ protected_email_addresses.belfastlinux_lug_lugmaster }}"
+    contact: "{{ protected_email_addresses.belfastlinux_lug_lugmaster }}"
+
+    dns_name: Belfast
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: web-01
+      to: http://www.belfastlinux.org
+
+  bhc:
+    notes: Mailing list demised, Website gone.
+    last_checked: "2017-11-13"
+
+    title: BHC LUG
+
+    dns_name: bhc
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bhc/
+
+  blackburn:
+    notes: Mailing list inactive since 2011, Website gone.
+    last_checked: "2017-11-13"
+
+    title: Blackburn LUG
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/blackburn/
+
+  Blux:
+    last_update: "2009-12-01"
+    last_checked: "2017-11-11"
+    status: Gone
+    notes: DNS taken by oriental owner. Not related to Linux since ~2006
+
+    title: B-lux
+    categories: Other
+    permalink: B-lux
+
+    website: http://www.b-lux.org
+    mailing_list: http://www.b-lux.org/list.htm
+    contact_address: "{{ protected_email_addresses.blux_lug_lugmaster }}"
+    contact: Mike Williams
+
+  Brighton:
+    notes: DNS name non-responsive, ML might be active, but requires subscription to view archives.
+    established_date: "1998-09-01"
+    last_update: "2010-10-01"
+    last_checked: "2017-11-11"
+    status: Gone
+
+    title: Brighton
+    categories: South-East
+    permalink: lugs/South-East/Brighton/
+    location:
+      latitude: 50.82
+      longitude: -0.14
+
+    website: http://lists.ourshack.com/mailman/listinfo/brighton-lug-misc
+    mailing_list: http://lists.ourshack.com/mailman/listinfo/brighton-lug-misc
+    contact_address: "{{ protected_email_addresses.brighton_lug_lugmaster }}"
+    contact: Johnathan Swan
+
+    dns_name: brighton
+    extra_dns_records:
+    - type: A
+      record: 80.253.99.24
+    - type: MX
+      record: 10 brighton
+
+  Brixton:
+    notes: DNS doesn't resolve
+    established_date: "2002-08-01"
+    last_update: "2010-04-01"
+    last_checked: "2017-11-11"
+    status: Gone
+
+    title: Brixton
+    categories: London
+    permalink: Brixton
+
+    website: https://blug.org.uk
+    contact_address: "{{ protected_email_addresses.brixton_lug_lugmaster }}"
+    contact: R.M. Sanchez
+
+    dns_name: blug
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: web-01
+      to: http://www.blug.org.uk
