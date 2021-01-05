@@ -11,6 +11,11 @@ bind_copies: # Is used for ACL and NS records
     - "2001:4978:f:392::2"
     - "209.20.91.73"
 
+bind_forwarders: # Is used for Upstream DNS lookups
+  Bitfolk:
+  - 85.119.80.232
+  - 85.119.80.233
+
 primary_suffix: lug.org.uk
 secondary_suffix: glug.org.uk
 tertiary_suffix: lugs.org.uk
@@ -22,7 +27,7 @@ default_mx:
 - "mail-in-01.{{ primary_suffix }}"
 - "mail-in-01.{{ secondary_suffix }}"
 default_spf: "v=spf1 a mx -all"
-default_rp: "hostmaster.{{ primary_suffix }}. {% for name in all_suffixes | default([]) %}{{ name }}. {% endfor %}"
+default_rp: "admin.lug.org.uk. lug.org.uk."
 
 dns_suffixes:
   "lug.org.uk":
@@ -123,12 +128,14 @@ hosts:
   mailman:
     v6: "2001:ba8:1f1:f090::2/64"
     v4: "85.119.83.42/21"
+    txt: Mailing List Services for LUG.ORG.UK and associated services
     spf: "v=spf1 a mx a:mailman.lug.org.uk a:mailman.glug.org.uk a:web-01.lug.org.uk a:web-01.glug.org.uk -all"
     aliases:
     - lists
   "web-01":
     v6: "2001:ba8:1f1:f091::2/64"
     v4: "85.119.83.68/21"
+    txt: Dynamic Web Services for LUG.ORG.UK and associated services
     aliases:
       # Legacy - Propose these are abandoned.
     - mail
@@ -144,6 +151,7 @@ hosts:
   snm:
     v6: "2001:ba8:1f1:f075::2/64"
     v4: "85.119.82.169/21"
+    txt: Static and Managed Web Services for LUG.ORG.UK and associated services
     aliases:
     - www
     - testsite
