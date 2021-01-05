@@ -32,9 +32,9 @@ for example:
 lugs_e:
   Example_Group:
     notes: Example Notes
-    established_date: 2002-12-01
-    last_update: 2016-09-01
-    last_checked: 2020-12-01
+    established_date: "2002-12-01"
+    last_update: "2016-09-01"
+    last_checked: "2020-12-01"
     status: Active
 
     title: An Example LUG

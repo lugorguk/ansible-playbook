@@ -9,8 +9,11 @@ lugs_c:
     categories: South-East
     contact_address: "{{ protected_email_addresses.chelmer_lug_contact }}"
     contact: Martin Houston
-    permalink: Chelmer Linux and Android Users Group
+    permalink: lugs/South-East/Chelmer Linux and Android Users Group/
     dns_name: chelmer
+    location:
+      latitude: 51.74
+      longitude: 0.47
     web_hosting:
       via: snm
       to: http://www.linkedin.com/groups/Chelmer-Linux-Android-Users-Group-3963756

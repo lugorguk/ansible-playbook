@@ -1,9 +1,9 @@
 ---
 lugs_b:
   Berkshire:
-    established_date: 1995-06-01
-    last_update: 2009-12-01
-    last_checked: 2017-11-11
+    established_date: "1995-06-01"
+    last_update: "2009-12-01"
+    last_checked: "2017-11-11"
     status: Active
 
     title: Berkshire & Thames Valley ("Silicon Corridor")
@@ -19,9 +19,9 @@ lugs_b:
     contact: Tom Dawes-Gamble
 
   Birmingham:
-    established_date: 2001-06-01
-    last_update: 2016-09-01
-    last_checked: 2017-11-11
+    established_date: "2001-06-01"
+    last_update: "2016-09-01"
+    last_checked: "2017-11-11"
     status: Active
 
     title: Birmingham
@@ -60,9 +60,9 @@ lugs_b:
       record: ns-1991.awsdns-56.co.uk.
 
   Blackpool:
-    established_date: 2004-01-01
-    last_update: 2015-11-01
-    last_checked: 2017-11-11
+    established_date: "2004-01-01"
+    last_update: "2015-11-01"
+    last_checked: "2017-11-11"
     status: Active
 
     title: Blackpool
@@ -84,9 +84,9 @@ lugs_b:
       to: https://blackpoolmakerspace.wordpress.com/
 
   Bradford:
-    established_date: 2008-08-01
-    last_update: 2009-12-01
-    last_checked: 2017-11-11
+    established_date: "2008-08-01"
+    last_update: "2009-12-01"
+    last_checked: "2017-11-11"
     status: Active
 
     title: Bradford
@@ -101,16 +101,16 @@ lugs_b:
     contact_address: "{{ protected_email_addresses.bradford_lug_lugmaster }}"
     contact: David Carpenter
 
-    dns_name: Bradford
+    dns_name: bradford
     mail_hosting: "{{ default_mx }}"
     web_hosting:
       via: snm
       to: http://bradlug.co.uk/
 
   Bristol:
-    established_date: 1998-06-01
-    last_checked: 2017-11-11
-    last_update: 2011-11-01
+    established_date: "1998-06-01"
+    last_checked: "2017-11-11"
+    last_update: "2011-11-01"
     status: Active
 
     title: Bristol and Bath

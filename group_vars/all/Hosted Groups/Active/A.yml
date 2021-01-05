@@ -1,9 +1,9 @@
 ---
 lugs_a:
   Aberdeen:
-    established_date: 2002-12-01
-    last_update: 2016-09-01
-    last_checked: 2020-12-01
+    established_date: "2002-12-01"
+    last_update: "2016-09-01"
+    last_checked: "2020-12-01"
     status: Active
 
     title: Aberdeen LUG
@@ -19,7 +19,6 @@ lugs_a:
     contact: Mark McRitchie
 
     dns_name: aberdeen
-    mail_hosting: "{{ default_mx }}"
     web_hosting:
       via: web-01
       to: https://www.aberlug.org.uk
@@ -28,9 +27,9 @@ lugs_a:
     title: Anglian LUG
     categories: East
 
-    established_date: 1999-05-01
-    last_checked: 2020-12-01
-    last_update: 2017-10-01
+    established_date: "1999-05-01"
+    last_checked: "2020-12-01"
+    last_update: "2017-10-01"
     status: Active
 
     website: https://www.alug.org.uk

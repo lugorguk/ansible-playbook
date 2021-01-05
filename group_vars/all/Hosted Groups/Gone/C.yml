@@ -1,8 +1,8 @@
 ---
 gone_lugs_c:
   Cambridge:
-    established_date: 1998-01-01
-    last_update: 2015-06-01
+    established_date: "1998-01-01"
+    last_update: "2015-06-01"
     status: Gone
 
     title: Cambridge

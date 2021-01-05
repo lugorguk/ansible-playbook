@@ -1,9 +1,9 @@
 ---
 gone_lugs_b:
   Bassetlaw:
-    established_date: 2004-10-01
-    last_checked: 2017-11-11
-    last_update: 2010-10-01
+    established_date: "2004-10-01"
+    last_checked: "2017-11-11"
+    last_update: "2010-10-01"
     status: Gone
 
     title: Bassetlaw
@@ -24,7 +24,7 @@ gone_lugs_b:
 
   bedford:
     notes: Mailing list indicates it is inactive, Website is last updated 2010.
-    last_checked: 2017-11-13
+    last_checked: "2017-11-13"
     status: presumed-gone
 
     title: Bedfordshire LUG
