@@ -27,7 +27,6 @@ default_mx:
 - "mail-in-01.{{ primary_suffix }}"
 - "mail-in-01.{{ secondary_suffix }}"
 default_spf: "v=spf1 a mx -all"
-default_rp: "admin.lug.org.uk. lug.org.uk."
 
 dns_suffixes:
   "lug.org.uk":
@@ -60,7 +59,6 @@ dns:
             {% endfor %}
           ]
         mx: "{{ default_mx }}"
-        rp: "{{ default_rp }}"
         txt:
         - "UK Linux User Groups"
         - "google-site-verification=vbowpMgzwoyxTcO_k24S1vNJKHRABaLCh6Si7iq3F8U"
@@ -99,7 +97,6 @@ dns:
             {% endfor %}
           ]
         mx: "{{ default_mx }}"
-        rp: "{{ default_rp }}"
         txt:
         - "OggCamp"
         spf:
