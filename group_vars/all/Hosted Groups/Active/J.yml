@@ -5,7 +5,7 @@ lugs_j:
     website: https://mailman.lug.org.uk/mailman/listinfo/linuxjobs/
     established_date: ''
     status: Active
-    last_update: 11/2013
+    last_update: "2013-11-01"
     categories: Other
     contact_address: "{{ protected_email_addresses.admin_address }}"
     contact: Lug.org.uk Admins

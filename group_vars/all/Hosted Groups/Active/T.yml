@@ -3,9 +3,9 @@ lugs_t:
   Tyneside:
     title: Tyneside (Newcastle)
     website: https://www.tyneside.lug.org.uk
-    established_date: 1999/07
+    established_date: "1999-07-01"
     status: Active
-    last_update: 12/2009
+    last_update: "2009-12-01"
     categories: North-East
     contact_address: "{{ protected_email_addresses.tyneside_lug_lugmaster }}"
     contact: Brian Ronald

@@ -27,7 +27,7 @@ lugs_p:
     website: https://www.portsmouth.lug.org.uk
     established_date: ''
     status: Active
-    last_update: 11/2016
+    last_update: "2016-11-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.portsmouth_lug_lugmaster }}"
     contact: Paul Tansom
@@ -41,9 +41,9 @@ lugs_p:
   Powys:
     title: Powys
     website: http://www.powyslug.org.uk
-    established_date: 2005/11
+    established_date: "2005-11-01"
     status: Active
-    last_update: 04/2011
+    last_update: "2011-04-01"
     categories: Wales
     contact_address: "{{ protected_email_addresses.powys_lug_contact }}"
     contact: Ray Rand
@@ -66,9 +66,9 @@ lugs_p:
   PrestonLancashire:
     title: Preston & Lancashire
     website: ''
-    established_date: 2001/09
+    established_date: "2001-09-01"
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: North-West
     contact_address: "{{ protected_email_addresses.preston_lug_lugmaster }}"
     contact: Phil Robinson

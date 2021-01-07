@@ -3,9 +3,9 @@ lugs_e:
   Edinburgh:
     title: Edinburgh
     website: http://www.edlug.org.uk/
-    established_date: 1998/03
+    established_date: "1998-03-01"
     status: Active
-    last_update: 03/2013
+    last_update: "2013-03-01"
     categories: Scotland
     contact_address: "{{ protected_email_addresses.edinburgh_lug_lugmaster }}"
     contact: Jan Goulding

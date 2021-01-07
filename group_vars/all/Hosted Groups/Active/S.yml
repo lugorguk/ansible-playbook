@@ -3,9 +3,9 @@ lugs_s:
   Scottish:
     title: Scottish
     website: http://scotlug.org.uk
-    established_date: 1998/02
+    established_date: "1998-02-01"
     status: Active
-    last_update: 12/2009
+    last_update: "2009-12-01"
     categories: Scotland
     contact_address: "{{ protected_email_addresses.scottish_lug_lugmaster }}"
     contact: Kenny Duffus
@@ -20,9 +20,9 @@ lugs_s:
   SheffieldLinuxUserGroupandBSDUserGroup:
     title: Sheffield Linux User Group and BSD User Group
     website: ''
-    established_date: 2003/07
+    established_date: "2003-07-01"
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: Yorkshire-and-Humber
     contact_address: "{{ protected_email_addresses.slugbug_lug_contact }}"
     contact: Chris Croome
@@ -38,9 +38,9 @@ lugs_s:
   Sheffield:
     title: Sheffield
     website: http://www.sheflug.org.uk/
-    established_date: 1999/01
+    established_date: "1999-01-01"
     status: Active
-    last_update: 12/2009
+    last_update: "2009-12-01"
     categories: Yorkshire-and-Humber
     contact_address: "{{ protected_email_addresses.sheffield_lug_contact }}"
     contact: Richard Ibbotson
@@ -50,9 +50,9 @@ lugs_s:
   Shropshire:
     title: Shropshire
     website: http://shropshirelug.wordpress.com/
-    established_date: 2000/02
+    established_date: "2000-02-01"
     status: Active
-    last_update: 11/2013
+    last_update: "2013-11-01"
     categories: West-Midlands
     contact_address: "{{ protected_email_addresses.shropshire_lug_lugmaster }}"
     contact: Dave Harris
@@ -67,9 +67,9 @@ lugs_s:
   SouthendonSea:
     title: Southend-on-Sea
     website: http://soslug.org
-    established_date: 2003/03
+    established_date: "2003-03-01"
     status: Active
-    last_update: 12/2016
+    last_update: "2016-12-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.southendonsea_lug_lugmaster }}"
     contact: Derek Shaw
@@ -84,9 +84,9 @@ lugs_s:
   SouthWales:
     title: South Wales
     website: http://www.swlug.org.uk
-    established_date: 2002/01
+    established_date: "2002-01-01"
     status: Active
-    last_update: 11/2013
+    last_update: "2013-11-01"
     categories: Wales
     mailing_list: http://mailman.lug.org.uk/mailman/listinfo/swlug/
     permalink: South Wales
@@ -99,9 +99,9 @@ lugs_s:
   Staffordshire:
     title: Staffordshire
     website: http://staffslug.org.uk/
-    established_date: 1999/03
+    established_date: "1999-03-01"
     status: Active
-    last_update: 02/2010
+    last_update: "2010-02-01"
     categories: West-Midlands
     contact_address: "{{ protected_email_addresses.staffordshire_lug_lugmaster }}"
     contact: Dave Roberts
@@ -116,9 +116,9 @@ lugs_s:
   Surrey:
     title: Surrey
     website: https://www.surrey.lug.org.uk
-    established_date: 2000/02
+    established_date: "2000-02-01"
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.surrey_lug_contact }}"
     contact: Surrey LUG admin team
@@ -139,9 +139,9 @@ lugs_s:
   Sussex:
     title: Sussex
     website: https://mailman.lug.org.uk/mailman/listinfo/sussex/
-    established_date: 1999/04
+    established_date: "1999-04-01"
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.sussex_lug_lugmaster }}"
     contact: Steve Dobson

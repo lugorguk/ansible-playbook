@@ -3,9 +3,9 @@ lugs_m:
   Malvern:
     title: Malvern
     website: https://malvern.lug.org.uk/
-    established_date: 2000/11
+    established_date: "2000-11-01"
     status: Active
-    last_update: 12/2009
+    last_update: "2009-12-01"
     categories: West-Midlands
     contact_address: "{{ protected_email_addresses.malvern_lug_lugmaster }}"
     contact: Phil Ironside
@@ -18,9 +18,9 @@ lugs_m:
   ManchesterFreeSoftware:
     title: Manchester Free Software
     website: http://libreplanet.org/wiki/Manchester
-    established_date: 2007/11
+    established_date: "2007-11-01"
     status: Active
-    last_update: 10/2010
+    last_update: "2010-10-01"
     categories: North-West
     contact_address: "{{ protected_email_addresses.manchesterfreesoftware_contact }}"
     contact: Team MFS
@@ -32,7 +32,7 @@ lugs_m:
     website: http://www.manlug.org/
     established_date: ''
     status: Active
-    last_update: 02/2013
+    last_update: "2013-02-01"
     categories: North-West
     contact_address: http://www.manlug.org/?page_id=809
     contact: http://www.manlug.org/?page_id=809
@@ -42,25 +42,25 @@ lugs_m:
   MiltonKeynes:
     title: Milton Keynes
     website: https://www.mk.lug.org.uk
-    established_date: 1999/01
+    established_date: "1999-01-01"
     status: Active
-    last_update: 12/2009
+    last_update: "2009-12-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.mk_lug_contact }}"
     contact: Gavin Westwood
     mailing_list: https://mailman.lug.org.uk/mailman/listinfo/mk/
     permalink: Milton Keynes
     dns_name: mk
-    web_hosting:
-      via: snm
     mail_hosting: "{{ default_mx }}"
     extra_dns_records:
     - type: CNAME
       target: wiki.mk
       record: hosting.solutium.co.uk.
-    - type: TXT
-      record: "v=spf1 a mx -all"
+    - type: DNAME
+      record: snm.lug.org.uk.
     - type: SPF
+      record: "v=spf1 a mx -all"
+    - type: TXT
       record: "v=spf1 a mx -all"
     email_redirects:
     - target: "{{ protected_email_addresses.mk_lug_lugmaster }}"

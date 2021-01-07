@@ -3,9 +3,9 @@ lugs_i:
   IsleOfMan:
     title: Isle Of Man
     website: https://iom.lug.org.uk
-    established_date: 2011/08
+    established_date: "2011-08-01"
     status: Active
-    last_update: 09/2012
+    last_update: "2012-09-01"
     categories: North-West
     contact_address: "{{ protected_email_addresses.iom_lug_lugmaster }}"
     contact: Dan Wood
@@ -27,7 +27,7 @@ lugs_i:
     website: http://www.iwlug.org.uk
     established_date: ''
     status: Starting
-    last_update: 10/2014
+    last_update: "2014-10-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.isleofwight_lug_lugmaster }}"
     contact: Roger Skidmore

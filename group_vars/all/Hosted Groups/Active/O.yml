@@ -3,9 +3,9 @@ lugs_o:
   Oxford:
     title: Oxford
     website: http://www.oxlug.org
-    established_date: 1999/01
+    established_date: "1999-01-01"
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.oxford_lug_contact }}"
     contact: Alasdair G Kergon

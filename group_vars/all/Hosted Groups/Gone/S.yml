@@ -18,18 +18,10 @@ gone_lugs_s:
 
   scotborders:
     title: Scottish Borders LUG
-    dns_name: scarborough
+    dns_name: scotborders
     web_hosting: "{{ primary_suffix }}"
     notes: Website gone
     last_checked: "2017-11-19"
-
-  SouthDerby:
-    title: South Derbyshire LUG
-    dns_name: sderby
-    web_hosting: "{{ primary_suffix }}"
-    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sderby/
-    last_checked: "2017-11-19"
-    notes: Website gone. Last mailing list post 2014.
 
   Shetland:
     title: Shetland LUG

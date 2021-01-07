@@ -5,7 +5,7 @@ lugs_k:
     website: http://kentlug.org
     established_date: ''
     status: Active
-    last_update: 04/2010
+    last_update: "2010-04-01"
     categories: South-East
     contact_address: "{{ protected_email_addresses.kent_lug_lugmaster }}"
     contact: Dan Attwood
