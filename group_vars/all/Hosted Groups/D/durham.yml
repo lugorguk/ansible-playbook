@@ -1,0 +1,32 @@
+---
+Group_durham:
+  established_date: "1999-01-01"
+  last_update: "2009-12-01"
+  status: Active
+
+  title: Durham
+  categories: North-East
+  permalink: lugs/North-East/Durham/
+  location:
+    latitude: 54.78
+    longitude: -1.58
+
+  website: http://www.nelug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/durham/
+  contact_address: "{{ protected_email_addresses.durham_lug_lugmaster }}"
+  contact: Richard Patterson
+
+  mailman: durham
+  dns_name: durham
+  web_hosting:
+    via: web-01
+    to: http://www.nelug.org.uk
+  extra_dns_records:
+  - type: CNAME
+    target: ne
+  - type: CNAME
+    target: www.ne
+  - type: CNAME
+    target: nelug
+  - type: CNAME
+    target: www.nelug

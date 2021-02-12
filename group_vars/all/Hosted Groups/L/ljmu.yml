@@ -1,0 +1,14 @@
+---
+Group_ljmu:
+  notes: 2021-01-27 Website gone. Mailing list inactive since 2009
+  last_checked: "2021-01-27"
+
+  title: Liverpool John Moores' University LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/ljmu
+
+  mailman: ljmu
+  dns_name: ljmu
+  web_hosting:
+    on: web-01
+    type: inactive

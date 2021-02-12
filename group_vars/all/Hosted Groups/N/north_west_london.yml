@@ -1,0 +1,19 @@
+---
+Group_north_west_london:
+  notes: 2021-02-12 Mailing list gone, website gone.
+  established_date: "2004-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2021-02-12"
+  status: Gone
+
+  title: North-West London
+  categories: London
+  permalink: lugs/London/North-West London/
+
+  contact_address: "{{ protected_email_addresses.north_west_london_lug_contact }}"
+  contact: Diamond Braganza
+
+  dns_name: northwestlondon
+  web_hosting: 
+    on: web-01
+    type: inactive

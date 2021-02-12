@@ -1,0 +1,25 @@
+---
+Group_sheffieldlinux_user_group_and_bsd_user_group:
+  notes: 2021-02-12 Mailing list present, but no posts since 2011. No website. Suspect ML setup to suppliment lug.org.uk services?
+  established_date: "2003-07-01"
+  last_update: "2021-02-12"
+  last_checked: "2021-02-12"
+  status: Gone
+
+  title: Sheffield Linux User Group and BSD User Group
+  categories: Yorkshire-and-Humber
+  permalink: lugs/Yorkshire-and-Humber/Sheffield Linux User Group and BSD User Group/
+  location:
+    latitude: 53.38
+    longitude: -1.46
+
+  mailing_list: http://www.email-lists.org/mailman/listinfo/slugbug
+  contact_address: "{{ protected_email_addresses.slugbug_lug_contact }}"
+  contact: Chris Croome
+
+  dns_name: slugbug
+  extra_dns_records:
+    - type: A
+      record: 193.201.200.140
+    - type: MX
+      record: 10 mx0.halon.org.uk.

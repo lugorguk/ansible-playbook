@@ -1,0 +1,29 @@
+---
+Group_edinburgh:
+  notes: 2021-01-24 Website active, mailing list active
+  established_date: "1998-03-01"
+  last_update: "2019-03-01"
+  last_checked: "2021-01-24"
+  status: Active
+
+  title: Edinburgh
+  categories: Scotland
+  permalink: lugs/Scotland/Edinburgh/
+  location:
+    latitude: 55.95
+    longitude: -3.19
+
+  website: https://edlug.gitlab.io
+  mailing_list: https://edlug.gitlab.io/mailing-list/
+  contact_address: "{{ protected_email_addresses.edinburgh_lug_lugmaster2 }}"
+  contact: Tai Kedzierski
+
+  dns_name: edinburgh
+  web_hosting:
+    via: web-01
+    to: https://edlug.gitlab.io
+  extra_dns_records:
+  - type: CNAME
+    target: ed
+  - type: CNAME
+    target: www.ed

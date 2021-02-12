@@ -1,0 +1,14 @@
+---
+Group_exes:
+  notes: Website gone.
+  last_checked: "2017-11-14"
+
+  title: Exeslug LUG
+
+  dns_name: exeslug
+  web_hosting:
+    on: web-01
+    type: inactive
+  extra_dns_records:
+    - type: CNAME
+      target: exes

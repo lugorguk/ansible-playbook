@@ -1,0 +1,29 @@
+---
+Group_newark:
+  notes: DNS does not resolve, but the FB group does - change this to a VIA?
+  established_date: "2001-06-01"
+  last_update: "2016-07-01"
+  last_checked: "2020-02-12"
+  status: Active
+
+  title: Newark
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Newark/
+  location:
+    latitude: 53.07
+    longitude: -0.81
+
+  website: https://www.facebook.com/groups/284465954978157/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/newark/
+  contact_address: "{{ protected_email_addresses.newark_lug_lugmaster }}"
+  contact: Craig Lynch
+
+  mailman: newark
+  dns_name: newark
+  extra_dns_records:
+  - type: NS
+    record: UK01.EUROPE.CAMELDNS.COM.
+  - type: NS
+    record: US01.AMERICAS.CAMELDNS.COM.
+  - type: NS
+    record: UK02.EUROPE.CAMELDNS.COM.

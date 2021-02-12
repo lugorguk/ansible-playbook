@@ -1,0 +1,29 @@
+---
+Group_exeter:
+  notes: Website 404. Mailing list inactive. May have been replaced by Raspberry Pi group?
+  established_date: "2012-04-01"
+  last_update: "2012-04-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Exeter
+  categories: South-West
+  permalink: lugs/South-West/Exeter # Fixed
+
+  website: https://exeter.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/exeter
+  contact_address: "{{ protected_email_addresses.exeter_lug_lugmaster }}"
+  contact: Rick Timmis
+
+  mailman: exeter
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.exeter_lug_lugmaster }}"
+    alias:
+    - info
+    - lugmaster
+    - webmaster
+  dns_name: exeter
+  web_hosting:
+    on: web-01
+    type: inactive

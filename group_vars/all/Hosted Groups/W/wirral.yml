@@ -1,0 +1,14 @@
+---
+Group_wirral:
+  notes: Mailing list indicated (2011) that the group is orphaned.
+  last_checked: "2021-01-29"
+
+  title: Wirral LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wirral
+
+  mailman: wirral
+  dns_name: Wirral
+  web_hosting:
+    on: snm
+    type: inactive

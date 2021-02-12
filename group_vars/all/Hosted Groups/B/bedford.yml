@@ -1,0 +1,34 @@
+---
+Group_bedford:
+  notes: Mailing list indicates it is inactive, Website is last updated 2010. IRC channel unused since 2011.
+  last_checked: "2017-11-13"
+  status: Gone
+
+  title: Bedfordshire LUG
+
+  website: https://bedford.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/beds/
+  chat: irc://irc.freenode.net/#bedslug
+
+  mailman: beds
+  dns_name: bedford
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: webmaster
+    alias:
+    - "{{ protected_email_addresses.bedford_lug_contact }}"
+  - target: admin
+    alias:
+    - "{{ protected_email_addresses.bedford_lug_contact }}"
+  - target: lugmaster
+    alias:
+    - "{{ protected_email_addresses.bedford_lug_contact }}"
+  web_hosting:
+    on: snm
+    type: static
+  extra_dns_records:
+  - type: CNAME
+    target: beds
+  - type: CNAME
+    target: www.beds
+

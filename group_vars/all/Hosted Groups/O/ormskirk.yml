@@ -1,0 +1,15 @@
+---
+Group_ormskirk:
+  notes: Website gone. Mailing list inactive since 2009
+  last_checked: "2017-11-19"
+  status: Gone
+
+  title: Ormskirk LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/ormskirk
+
+  mailman: ormskirk
+  dns_name: ormskirk
+  web_hosting:
+    on: web-01
+    type: inactive

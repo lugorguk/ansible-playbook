@@ -1,0 +1,11 @@
+---
+Group_eus:
+  notes: 2021-01-24 IP does not host a website. Replaced with inactive.
+  last_checked: "2021-01-24"
+
+  title: Exeter University Student LUG
+
+  dns_name: euslug
+  web_hosting:
+    on: web-01
+    type: inactive

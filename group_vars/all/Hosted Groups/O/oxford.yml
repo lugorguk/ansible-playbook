@@ -1,0 +1,26 @@
+---
+Group_oxford:
+  notes: 2021-02-12 last checked website seems unmaintained (but is still there) and mailing list is members only.
+  established_date: "1999-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Oxford
+  categories: South-East
+  permalink: lugs/South-East/Oxford/
+  location:
+    latitude: 51.75
+    longitude: -1.26
+
+  website: http://www.oxlug.org
+  mailing_list: http://lists.oxlug.org/mailman/listinfo/oxlug
+  contact_address: "{{ protected_email_addresses.oxford_lug_contact }}"
+  contact: Alasdair G Kergon
+
+  dns_name: oxford
+  mail_hosting: "{{ default_mx }}"
+  web_hosting: web-01
+  extra_dns_records:
+  - type: CNAME
+    target: ox

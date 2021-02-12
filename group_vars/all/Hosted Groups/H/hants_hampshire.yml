@@ -1,0 +1,28 @@
+---
+Group_hants_hampshire:
+  established_date: "1998-06-01"
+  last_update: "2009-12-01"
+  status: Active
+
+  title: Hants
+  categories: South-East
+  permalink: lugs/South-East/Hants/
+  location:
+    latitude: 51.06
+    longitude: -1.31
+
+  website: http://www.hantslug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/hants/
+  contact_address: "{{ protected_email_addresses.hants_lug_lugmaster2 }}"
+  contact: Andy Ransom
+
+  mailman: hants
+  dns_name: hants
+  extra_dns_records:
+  - type: A
+    record: 85.119.82.68
+  - type: CNAME
+    target: mailman.hants
+  - type: MX
+    record: 10 hantslug.org.uk.
+

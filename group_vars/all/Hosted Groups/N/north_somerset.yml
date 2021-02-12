@@ -1,0 +1,11 @@
+---
+Group_north_somerset:
+  notes: Website gone.
+  last_checked: "2017-11-19"
+
+  title: North Somerset LUG
+
+  dns_name: northsom
+  web_hosting:
+    on: web-01
+    type: inactive

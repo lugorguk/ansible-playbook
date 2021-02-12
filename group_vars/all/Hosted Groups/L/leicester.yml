@@ -1,0 +1,40 @@
+---
+Group_leicester:
+  notes: Checked 2021-01-27. Website mentions 2010 as it's last update. ML has no posts.
+  established_date: "1999-09-01"
+  last_update: "2009-12-01"
+  last_checked: "2021-01-27"
+  status: Gone
+
+  title: Leicester
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Leicester # Fixed
+
+  website: https://www.leicester.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/leicester/
+  contact: Clive Jones
+
+  mailman: leicester
+  dns_name: leicester
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.leicester_lug_lugmaster }}"
+    alias:
+    - lugmaster
+    - postmaster
+  - target: "{{ protected_email_addresses.leicester_lug_lugmaster2 }}"
+    alias:
+    - webmaster
+  - target: "{{ protected_email_addresses.leicester_contact_clive }}"
+    alias:
+    - clive
+  - target: "{{ protected_email_addresses.leicester_contact_gary }}"
+    alias:
+    - gary
+  - target: "{{ protected_email_addresses.leicester_contact_splat }}"
+    alias:
+    - splat1
+  web_hosting:
+    on: web-01
+    type: basic
+

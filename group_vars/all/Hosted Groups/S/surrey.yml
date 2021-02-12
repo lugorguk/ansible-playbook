@@ -1,0 +1,29 @@
+---
+Group_surrey:
+    notes: Mailing list active 2021-02-12
+    established_date: "2000-02-01"
+    last_update: "2010-04-01"
+    last_checked: "2021-02-12"
+    status: Active
+
+    title: Surrey
+    categories: South-East
+    permalink: lugs/South-East/Surrey/
+    location:
+      latitude: 51.31
+      longitude: -0.56
+
+    website: https://www.surrey.lug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/surrey/
+    contact_address: "{{ protected_email_addresses.surrey_lug_contact }}"
+    contact: Surrey LUG admin team
+
+    mailman: surrey
+    mail_hosting: "{{ default_mx }}"
+    extra_dns_records:
+    - type: A
+      record: 85.119.83.158
+    - type: CNAME
+      target: test.surrey
+    - type: CNAME
+      target: uat.surrey

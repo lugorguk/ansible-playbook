@@ -1,0 +1,42 @@
+---
+Group_birmingham:
+  established_date: "2001-06-01"
+  last_update: "2016-09-01"
+  last_checked: "2017-11-11"
+  status: Active
+
+  title: Birmingham
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Birmingham/
+  location:
+    latitude: 52.49
+    longitude: -1.89
+
+  website: https://www.birminghamlug.org.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sb
+  contact_address: "{{ protected_email_addresses.birmingham_lug_lugmaster }}"
+  contact: LUG Master
+
+  mailman: sb
+  dns_name: birmingham
+  extra_dns_records:
+    - type: NS
+      record: ns-50.awsdns-06.com.
+    - type: NS
+      record: ns-1963.awsdns-53.co.uk.
+    - type: NS
+      record: ns-1241.awsdns-27.org.
+    - type: NS
+      record: ns-772.awsdns-32.net.
+    - type: NS
+      target: sb
+      record: ns-1400.awsdns-47.org.
+    - type: NS
+      target: sb
+      record: ns-211.awsdns-26.com.
+    - type: NS
+      target: sb
+      record: ns-623.awsdns-13.net.
+    - type: NS
+      target: sb
+      record: ns-1991.awsdns-56.co.uk.

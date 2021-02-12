@@ -1,0 +1,9 @@
+---
+Group_harrogate:
+  notes: No response
+  last_checked: "2017-11-14"
+
+  dns_name: harrogate
+  web_hosting:
+    on: web-01
+    type: inactive

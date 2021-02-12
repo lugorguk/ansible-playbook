@@ -1,0 +1,29 @@
+---
+Group_rustington:
+  notes: 2021-02-12 Website shows last update 2020-04-17.
+  established_date: "2010-10-01"
+  last_update: "2010-10-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Rustington
+  categories: South-East
+  permalink: lugs/South-East/Rustington/
+  location:
+    latitude: 50.8
+    longitude: -0.51
+
+  website: https://www.rustington.lug.org.uk/
+  contact_address: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+  contact: Frank James
+
+  dns_name: rustington
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.rustington_lug_lugmaster }}"
+    alias:
+    - webmaster
+    - lugmaster
+  web_hosting:
+    on: web-01
+    type: php

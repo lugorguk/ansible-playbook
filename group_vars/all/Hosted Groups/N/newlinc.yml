@@ -1,0 +1,11 @@
+---
+Group_newlinc:
+  notes: Website gone.
+  last_checked: "2017-11-19"
+
+  title: NewLinc LUG
+
+  dns_name: newlinc
+  web_hosting:
+    on: web-01
+    type: inactive

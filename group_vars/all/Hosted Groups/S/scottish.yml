@@ -1,0 +1,25 @@
+---
+Group_scottish:
+    notes: 2021-02-12 Website active, mailing list active.
+    established_date: "1998-02-01"
+    last_update: "2009-12-01"
+    last_checked: "2021-02-12"
+    status: Active
+
+    title: Scottish
+    categories: Scotland
+    permalink: lugs/Scotland/Scottish/
+    location:
+      latitude: 55.86
+      longitude: -4.25
+
+    website: https://scotlug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/scottish/
+    contact_address: "{{ protected_email_addresses.scottish_lug_lugmaster }}"
+    contact: Kenny Duffus
+
+    mailman: scottish
+    dns_name: scottish
+    extra_dns_records:
+      - type: CNAME
+        record: www.scotlug.org.uk.

@@ -1,0 +1,26 @@
+---
+Group_hertfordshire:
+  notes: Website lists last meeting as 2017. Mailing list similarly inactive.
+  established_date: "2001-01-01"
+  last_update: "2009-12-01"
+  last_checked: "2021-01-26"
+  status: Active
+
+  title: Hertfordshire
+  categories: East
+  permalink: lugs/East/Hertfordshire/
+  location:
+    latitude: 51.9
+    longitude: -0.2
+
+  website: http://www.herts.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/herts/
+  contact_address: "{{ protected_email_addresses.hertfordshire_lug_lugmaster }}"
+  contact: Nicolas Pike
+
+  mailman: herts
+  dns_name: herts
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    on: web-01
+    type: static

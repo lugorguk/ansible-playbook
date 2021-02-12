@@ -1,0 +1,19 @@
+---
+group_anglian:
+  notes: No website, mailing list empty. Suggest probably gone?
+  established_date: "1999-05-01"
+  last_update: "2009-12-01"
+  last_checked: "2020-12-01"
+  status: Active
+
+  title: Anglian
+  categories: East
+  permalink: lugs/East/Anglian LUG/
+  location:
+      latitude: 52.63
+      longitude: 1.3
+
+  website: https://www.alug.org.uk
+  mailing_list: https://lists.alug.org.uk/mailman/listinfo/main
+  contact_address: "{{ protected_email_addresses.anglian_lug_lugmaster }}"
+  contact: ALUG Admin Team

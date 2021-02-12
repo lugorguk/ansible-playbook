@@ -1,0 +1,21 @@
+---
+Group_dundee_tayside:
+  notes: May have been replaced by Dundee Makerspace? DNS Name listed is now for sale. Mailing list last activity 2018.
+  established_date: "2002-06-01"
+  last_update: "2010-04-01"
+  last_checked: "2021-01-24"
+  status: Gone
+
+  title: Dundee & Tayside
+  categories: Scotland
+  permalink: lugs/Scotland/Dundee & Tayside
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/dundee/
+  contact_address: "{{ protected_email_addresses.dundee_lug_lugmaster }}"
+  contact: Gordon Dunlop
+
+  mailman: dundee
+  dns_name: dundee
+  web_hosting:
+    on: web-01
+    type: inactive

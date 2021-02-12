@@ -1,0 +1,11 @@
+---
+Group_essex:
+  notes: Website gone.
+  last_checked: "2017-11-13"
+
+  title: Essex LUG
+
+  dns_name: essex
+  web_hosting:
+    on: web-01
+    type: inactive

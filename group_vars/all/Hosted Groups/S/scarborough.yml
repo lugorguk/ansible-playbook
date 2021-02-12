@@ -1,0 +1,15 @@
+---
+Group_scarborough:
+  notes: Website gone. Mailing list last post 2015
+  last_checked: "2017-11-19"
+  status: Gone
+
+  title: Scarborough LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/scarborough
+
+  mailman: scarborough
+  dns_name: scarborough
+  web_hosting:
+    on: web-01
+    type: inactive

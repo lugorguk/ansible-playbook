@@ -1,0 +1,24 @@
+---
+Group_bradford:
+  established_date: "2008-08-01"
+  last_update: "2009-12-01"
+  last_checked: "2017-11-11"
+  status: Active
+
+  title: Bradford
+  categories: Yorkshire-and-Humber
+  permalink: lugs/Yorkshire-and-Humber/Bradford/
+  location:
+    latitude: 53.8
+    longitude: -1.76
+
+  website: https://bradlug.co.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bradford/
+  contact_address: "{{ protected_email_addresses.bradford_lug_lugmaster }}"
+  contact: David Carpenter
+
+  mailman: bradford
+  dns_name: bradford
+  web_hosting:
+    via: snm
+    to: http://bradlug.co.uk/

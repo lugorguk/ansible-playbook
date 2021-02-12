@@ -1,0 +1,21 @@
+---
+Group_thanet:
+  notes: No website, mailing list inactive since 2011.
+  established_date: "2004-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: Thanet Linux User Group
+  categories: South-East
+  permalink: lugs/South-East/Thanet Linux User Group/
+  location:
+    latitude: 51.36
+    longitude: 1.35
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/thanet/
+  contact_address: "{{ protected_email_addresses.thanet_lug_lugmaster }}"
+  contact: Matthew Macdonald-Wallace
+
+  mailman: thanet
+

@@ -1,0 +1,25 @@
+---
+Group_nottingham:
+  notes: 2021-02-12 Checked and confirmed, ml active. Website last posts 2019.
+  established_date: "2000-03-01"
+  last_update: "2012-05-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Nottingham
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Nottingham/
+  location:
+    latitude: 52.95
+    longitude: -1.16
+
+  website: https://nlug.ml1.co.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/nottingham/
+  contact_address: "{{ protected_email_addresses.nottingham_lug_contact }}"
+  contact: Martin Lomas
+
+  mailman: nottingham
+  mail_hosting: "{{ default_mx }}"
+  extra_dns_records:
+  - type: CNAME
+    record: nlug.ml1.co.uk.

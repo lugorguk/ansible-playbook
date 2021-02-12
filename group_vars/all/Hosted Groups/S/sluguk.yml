@@ -1,0 +1,9 @@
+---
+Group_sluguk:
+  notes: Redirected URL gone.
+  last_checked: "2017-11-20"
+
+  dns_name: sluguk
+  web_hosting:
+    via: web-01
+    to: http://www.btinternet.com/~homebrew/sluguk/

@@ -1,0 +1,24 @@
+---
+Group_coventry:
+  established_date: "2001-05-01"
+  last_update: "2019-08-01"
+  last_checked: "2021-01-05"
+  status: Active
+
+  title: Coventry
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Coventry/
+  location:
+    latitude: 52.41
+    longitude: -1.52
+
+  website: http://www.covlug.org.uk/
+  mailing_list: http://www.covlug.org.uk/index.php?n=Members.MailingList
+  contact_address: "{{ protected_email_addresses.coventry_lug_lugmaster2 }}"
+  contact: Darren Austin
+
+  dns_name: Coventry
+  web_hosting:
+    via: web-01
+    to: http://www.covlug.org.uk/
+

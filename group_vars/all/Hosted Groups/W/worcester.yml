@@ -1,0 +1,34 @@
+---
+Group_worcester:
+  notes: DNS fails to resolve, no mailing list activity
+  established_date: "2000-03-01"
+  last_update: "2013-02-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Worcester LUG
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Worcester
+
+  website: https://worcester.lug.org.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/worcester/
+  contact_address: "{{ protected_email_addresses.worcester_lug_lugmaster }}"
+  contact: Leo McArdle
+
+  mailman: worcester
+  dns_name: worcester
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.worcester_lug_lugmaster }}"
+    alias:
+    - admin
+    - lugmaster
+    - webmaster
+  web_hosting:
+    on: web-01
+    type: inactive
+  extra_dns_records:
+  - type: CNAME
+    target: worcs
+  - type: CNAME
+    target: www.worcs

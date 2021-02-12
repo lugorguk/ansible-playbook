@@ -1,0 +1,11 @@
+---
+Group_loughborough:
+  notes: 2021-01-27 DNS resolves, but website does not render. Updated hosting to inactive.
+  last_checked: "2021-01-27"
+
+  title: Loughborough LUG
+
+  dns_name: loughborough
+  web_hosting:
+    on: web-01
+    type: inactive

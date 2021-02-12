@@ -1,0 +1,19 @@
+---
+Group_west_berkshire_and_newbury:
+  notes: 2017-11-12 Website gone
+  established_date: "2006-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: West Berkshire - Newbury
+  categories: South-East
+  permalink: lugs/South-East/West Berkshire - Newbury/
+
+  contact_address: "{{ protected_email_addresses.westberkshire_lug_contact }}"
+  contact: Phillip Chandler
+
+  dns_name: westberkshire
+  web_hosting:
+    on: web-01
+    type: inactive

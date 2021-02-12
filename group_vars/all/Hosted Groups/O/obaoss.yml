@@ -1,0 +1,15 @@
+---
+Group_obaoss:
+  notes: Website gone. Mailing list inactive since 2008
+  last_checked: "2017-11-19"
+  status: Gone
+
+  title: Oxford Brookes LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/obaoss
+
+  mailman: obaoss
+  dns_name: obaoss
+  web_hosting:
+    on: web-01
+    type: inactive

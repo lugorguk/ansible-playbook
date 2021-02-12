@@ -1,0 +1,11 @@
+---
+Group_bhc:
+  notes: Website gone.
+  last_checked: "2017-11-13"
+
+  title: BHC LUG
+
+  dns_name: bhc
+  web_hosting:
+    on: web-01
+    type: inactive

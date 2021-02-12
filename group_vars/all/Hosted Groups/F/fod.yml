@@ -1,0 +1,11 @@
+---
+Group_fod:
+  notes: Website gone.
+  last_checked: "2017-11-14"
+
+  title: Forest of Dean
+
+  dns_name: fod
+  web_hosting:
+    on: web-01
+    type: inactive

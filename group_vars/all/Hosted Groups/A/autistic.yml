@@ -1,0 +1,14 @@
+---
+Group_autistic:
+  notes: Previously existed. Mailing list still there (no activity since 2013). No website.
+  last_checked: "2017-11-12"
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/autistic
+  contact_address: "{{ protected_email_addresses.autistic_lug_lugmaster }}"
+  contact: Steve Parkes
+
+  mailman: autistic
+  dns_name: autistic
+  web_hosting:
+    via: web-01
+    to: https://mailman.lug.org.uk/mailman/listinfo/autistic

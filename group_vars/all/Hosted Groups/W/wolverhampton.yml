@@ -1,0 +1,25 @@
+---
+Group_wolverhampton:
+    notes: Website active, mailing list last post 2021-01
+    established_date: "1999-11-01"
+    last_update: "2009-12-01"
+    last_checked: "2021-01-29"
+    status: Active
+
+    title: Wolverhampton
+    categories: West-Midlands
+    permalink: lugs/West-Midlands/Wolverhampton/
+    location:
+      latitude: 52.59
+      longitude: -2.13
+
+    website: https://wolveslug.org.uk/
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wolves/
+    contact_address: "{{ protected_email_addresses.wolverhampton_lug_lugmaster2 }}"
+    contact: Adam Sweet
+
+    mailman: wolves
+    dns_name: wolveslug
+    web_hosting:
+      via: web-01
+      to: https://wolveslug.org.uk/

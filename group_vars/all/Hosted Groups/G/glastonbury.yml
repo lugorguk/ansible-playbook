@@ -1,0 +1,21 @@
+---
+Group_glastonbury:
+  notes: 2021-01-24 DNS does not resolve for lugog.org.uk. Mailing list inactive since 2016.
+  established_date: "2003-03-01"
+  last_update: "2009-12-01"
+  last_checked: "2021-01-24"
+  status: Active
+
+  title: Glastonbury
+  categories: South-West
+  permalink: lugs/South-West/Glastonbury # Fixed
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/glastonbury
+  contact_address: "{{ protected_email_addresses.glastonbury_lug_lugmaster }}"
+  contact: Sean Miller
+
+  mailman: glastonbury
+  dns_name: glastonbury
+  web_hosting:
+    via: web-01
+    to: https://mailman.lug.org.uk/mailman/listinfo/glastonbury

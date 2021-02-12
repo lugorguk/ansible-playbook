@@ -1,0 +1,29 @@
+---
+Group_isle_of_man:
+  notes: Checked 2021-01-27. ML last post 2019. Website somewhat bare.
+  established_date: "2011-08-01"
+  last_update: "2012-09-01"
+  last_checked: "2021-01-27"
+  status: Active
+
+  title: Isle Of Man
+  categories: North-West
+  permalink: lugs/North-West/Isle Of Man/
+
+  website: https://iom.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/iom
+  contact_address: "{{ protected_email_addresses.iom_lug_lugmaster }}"
+  contact: Dan Wood
+
+  mailman: iom
+  dns_name: iom
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+    - target: "{{ protected_email_addresses.iom_lug_lugmaster }}"
+      alias:
+      - info
+      - lugmaster
+      - webmaster
+  web_hosting:
+    on: snm
+    type: static

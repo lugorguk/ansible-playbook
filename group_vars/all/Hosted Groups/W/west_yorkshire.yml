@@ -1,0 +1,21 @@
+---
+Group_west_yorkshire:
+  notes: None of the extra DNS names resolve. however there seems to be a separate website. Perhaps we should point this record to theirs?
+  established_date: "1998-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-20"
+  status: Active
+
+  title: West Yorkshire
+  categories: Yorkshire-and-Humber
+  permalink: lugs/Yorkshire-and-Humber/West Yorkshire # Fixed
+
+  website: http://www.wylug.org.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wylug-discuss
+  contact_address: "{{ protected_email_addresses.wylug_lug_contact }}"
+  contact: WYLUG
+
+  dns_name: wylug
+  web_hosting:
+    via: web-01
+    to: http://www.wylug.org.uk/

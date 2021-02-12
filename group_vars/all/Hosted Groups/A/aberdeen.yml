@@ -1,0 +1,24 @@
+---
+Group_aberdeen:
+  established_date: "2002-12-01"
+  last_update: "2016-09-01"
+  last_checked: "2020-12-01"
+  status: Active
+
+  title: Aberdeen
+  categories: Scotland
+  permalink: lugs/Scotland/Aberdeen/
+  location:
+    latitude: 57.15
+    longitude: -2.09
+
+  website: https://www.aberlug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/aberdeen/
+  contact_address: "{{ protected_email_addresses.aberdeen_lug_lugmaster }}"
+  contact: Mark McRitchie
+
+  mailman: aberdeen
+  dns_name: aberdeen
+  web_hosting:
+    via: web-01
+    to: https://www.aberlug.org.uk

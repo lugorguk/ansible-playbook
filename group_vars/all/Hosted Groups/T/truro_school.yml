@@ -1,0 +1,12 @@
+---
+Group_truro_school:
+  notes: website gone.
+  last_checked: "2017-11-20"
+
+  title: Truro School LUG
+
+  dns_name: tslug
+  web_hosting:
+    on: web-01
+    type: inactive
+

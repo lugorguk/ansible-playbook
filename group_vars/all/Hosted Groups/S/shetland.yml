@@ -1,0 +1,11 @@
+---
+Group_shetland:
+  notes: website gone.
+  last_checked: "2017-11-20"
+
+  title: Shetland LUG
+
+  dns_name: shetland
+  web_hosting:
+    on: web-01
+    type: inactive

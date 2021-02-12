@@ -1,0 +1,29 @@
+---
+Group_liverpool:
+  established_date: "2004-11-01"
+  last_update: "2015-01-01"
+  status: Active
+
+  title: Liverpool (LivLUG)
+  categories: North-West
+  permalink: lugs/North-West/Liverpool (LivLUG)
+  location:
+    latitude: 53.41
+    longitude: -2.99
+
+  website: http://www.livlug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/liverpool/
+  contact_address: "{{ protected_email_addresses.liverpool_lug_lugmaster }}"
+  contact: Neil Bothwick
+
+  mailman: liverpool
+  dns_name: liv
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    via: snm
+    to: http://www.livlug.org.uk
+  extra_dns_records:
+  - type: CNAME
+    target: livlug
+  - type: CNAME
+    target: liverpool

@@ -1,0 +1,17 @@
+---
+Group_jobs:
+  notes: Checked 2021-01-27. Last post 2020-03.
+  last_update: "2013-11-01"
+  last_checked: "2021-01-27"
+  status: Active
+
+  title: Jobs
+  categories: Other
+  permalink: lugs/Other/Jobs/
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/linuxjobs/
+  contact_address: "{{ protected_email_addresses.admin_address }}"
+  contact: Alasdair Kergon
+
+  mailman: linuxjobs
+

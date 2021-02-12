@@ -1,0 +1,26 @@
+---
+Group_belfast:
+  notes: Website untouched since 2003. Mailing list does not resolve. In 2017, the Hosting Account was suspended, however, in 2021-01-23 this is not the case. Jon contacted the IRC channel specified on 2021-01-23 to ask for guidance.
+  established_date: "1999-09-01"
+  last_update: "2009-12-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Belfast
+  categories: Northern-Ireland
+  permalink: lugs/Northern-Ireland/Belfast
+  location:
+    latitude: 54.6
+    longitude: -5.93
+
+  website: http://www.belfastlinux.org
+  mailing_list: http://www.belfastlinux.org/wiki/Mailing_list
+  chat: irc://irc.oftc.net/#blug
+  contact_address: "{{ protected_email_addresses.belfastlinux_lug_lugmaster }}"
+  contact: "{{ protected_email_addresses.belfastlinux_lug_lugmaster }}"
+
+  dns_name: Belfast
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    via: web-01
+    to: http://www.belfastlinux.org

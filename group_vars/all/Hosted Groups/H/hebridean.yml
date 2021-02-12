@@ -1,0 +1,10 @@
+---
+Group_hebridean:
+  notes: DNS name does not resolve.
+  last_checked: "2017-11-14"
+
+  dns_name: hebridean
+  web_hosting:
+    on: web-01
+    type: inactive
+

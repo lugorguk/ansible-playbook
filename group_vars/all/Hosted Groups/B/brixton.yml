@@ -1,0 +1,23 @@
+---
+Group_brixton:
+  notes: DNS doesn't resolve
+  established_date: "2002-08-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Brixton
+  categories: London
+  permalink: lugs/London/Brixton/
+  location:
+    latitude: 51.46
+    longitude: -0.12
+
+  contact_address: "{{ protected_email_addresses.brixton_lug_lugmaster }}"
+  contact: R.M. Sanchez
+
+  dns_name: blug
+  web_hosting:
+    on: web-01
+    type: inactive
+

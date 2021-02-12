@@ -1,0 +1,27 @@
+---
+Group_northants:
+  notes: 2021-02-12 Mailing list last post Aug 2019
+  established_date: "1998-09-01"
+  last_update: "2009-12-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Northants
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Northants/
+  location:
+    latitude: 52.24
+    longitude: -0.9
+
+  website: http://www.northants.lug.org.uk
+  chat: irc://irc.lug.org.uk/#nlug
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/northants/
+  contact_address: "{{ protected_email_addresses.northants_lug_contact }}"
+  contact: Kevin Taylor
+
+  mailman: northants
+  dns_name: northants
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    on: snm
+    type: static

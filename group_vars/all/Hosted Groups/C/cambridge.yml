@@ -1,0 +1,17 @@
+---
+Group_cambridge:
+  notes: Website returns 404. Removed
+  established_date: "1998-01-01"
+  last_update: "2015-06-01"
+  status: Gone
+
+  title: Cambridge
+  categories: East
+  permalink: lugs/East/Cambridge/
+  location:
+    latitude: 52.21
+    longitude: 0.12
+
+  contact_address: "{{ protected_email_addresses.cambridge_lug_lugmaster2 }}"
+  contact: Paul Oldham
+

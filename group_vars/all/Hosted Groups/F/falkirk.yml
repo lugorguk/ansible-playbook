@@ -1,0 +1,21 @@
+---
+Group_falkirk:
+  notes: 2021-01-24 DNS does not resolve. Last Mailing List post was 2018 referencing a techmeetup group.
+  established_date: "2001-05-01"
+  last_update: "2016-07-01"
+  last_checked: "2021-01-24"
+  status: Gone
+
+  title: Falkirk
+  categories: Scotland
+  permalink: lugs/Scotland/Falkirk
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/falkirk/
+  contact_address: "{{ protected_email_addresses.falkirk_lug_lugmaster }}"
+  contact: Greg Sutcliffe
+
+  mailman: falkirk
+  dns_name: falkirk
+  web_hosting:
+   via: web-01
+   to: https://mailman.lug.org.uk/mailman/listinfo/falkirk/

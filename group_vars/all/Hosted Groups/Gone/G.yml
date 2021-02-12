@@ -1,7 +1,0 @@
-gone_lugs_g:
-  gla:
-    dns_name: gla
-    title: Glasgow University LUG
-    web_hosting: "{{ primary_suffix }}"
-    last_checked: "2017-11-14"
-    notes: Website gone.

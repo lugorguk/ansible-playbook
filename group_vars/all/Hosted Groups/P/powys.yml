@@ -1,0 +1,22 @@
+---
+Group_powys:
+  notes: 2021-02-12 Website recently updated
+  established_date: "2005-11-01"
+  last_update: "2021-02-12"
+  status: Active
+
+  title: Powys
+  categories: Wales
+  permalink: lugs/Wales/Powys/
+  location:
+    latitude: 52.65
+    longitude: -3.33
+
+  website: http://www.powyslug.org.uk
+  contact_address: "{{ protected_email_addresses.powys_lug_contact }}"
+  contact: Ray Rand
+
+  dns_name: powys
+  web_hosting:
+    via: web-01
+    to: http://www.powyslug.org.uk

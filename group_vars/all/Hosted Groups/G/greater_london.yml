@@ -1,0 +1,29 @@
+---
+Group_greater_london:
+  notes: 2021-01-24 Website last updated 2017, however mailing list active. Extra DNS records were broken. Replaced by redirect.
+  established_date: "1998-08-01"
+  last_update: "2012-06-01"
+  last_checked: "2021-01-24"
+  status: Active
+
+  title: Greater London (GLLUG)
+  categories: London
+  permalink: lugs/London/Greater London (GLLUG)
+
+  website: http://www.gllug.org.uk
+  mailing_list: http://mailman.lug.org.uk/mailman/listinfo/gllug
+  contact_address: "{{ protected_email_addresses.gllug_lug_lugmaster }}"
+  contact: Matt Copperwaite
+
+  mailman: gllug
+  dns_name: gllug
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+    - target: "{{ protected_email_addresses.gllug_lug_lugmaster }}"
+      alias:
+      - info
+      - webmaster
+      - lugmaster
+  web_hosting:
+    via: snm
+    to: http://gllug.org.uk

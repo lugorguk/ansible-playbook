@@ -1,0 +1,18 @@
+---
+Group_hull:
+  notes: DNS name no longer resolves. Removed website and mailing list entries
+  last_update: "2010-01-01"
+  last_checked: "2021-01-26"
+  status: Gone
+
+  title: Hull
+  categories: Yorkshire-and-Humber
+  permalink: lugs/Yorkshire-and-Humber/Hull
+
+  contact_address: "{{ protected_email_addresses.hull_lug_lugmaster }}"
+  contact: Dave Harding
+
+  dns_name: Hull
+  web_hosting:
+    on: web-01
+    type: inactive

@@ -1,0 +1,14 @@
+---
+Group_yopy:
+  notes: Website gone. Mailing list had content in 2008 (site breach) but last "active" thread was 2005.
+  last_checked: "2017-11-20"
+
+  title: YOPY PDA Linux
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/yopy
+
+  mailman: yopy
+  dns_name: yopy
+  web_hosting:
+    on: web-01
+    type: inactive

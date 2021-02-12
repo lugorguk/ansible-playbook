@@ -1,0 +1,12 @@
+---
+Group_lust:
+    notes: Website and ML gone.
+    last_checked: "2017-11-17"
+
+    title: Lust LUG
+
+    dns_name: lust
+    web_hosting:
+      on: web-01
+      type: inactive
+

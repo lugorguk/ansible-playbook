@@ -1,0 +1,16 @@
+---
+Group_cleveland:
+  notes: Mailing list inactive since 2006, Website gone.
+  last_checked: "2017-11-13"
+  status: Gone
+
+  title: Cleveland LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/cleveland/
+
+  mailman: cleveland
+  dns_name: cleveland
+  web_hosting:
+    on: web-01
+    type: inactive
+

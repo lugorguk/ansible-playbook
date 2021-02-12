@@ -1,0 +1,24 @@
+---
+Group_west_lothian:
+    notes: Confirmed 2021-01-29 westlothianlug.org.uk is gone. Mailing list last post was 2011.
+    established_date: "2011-12-01"
+    last_update: "2011-12-01"
+    last_checked: "2021-01-29"
+    status: Gone
+
+    title: West Lothian
+    categories: Scotland
+    permalink: lugs/Scotland/West Lothian/
+    location:
+      latitude: 55.91
+      longitude: -3.55
+
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/westlothian
+    contact_address: "{{ protected_email_addresses.westlothian_lug_lugmaster }}"
+    contact: Keiran Smith
+
+    mailman: westlothian
+    dns_name: westlothian
+    web_hosting:
+      on: web-01
+      type: inactive

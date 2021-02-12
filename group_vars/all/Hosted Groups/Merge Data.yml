@@ -1,27 +1,33 @@
 ---
-letter_array: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+Active_and_Inactive_Groups: |-
+  {
+    {% for this in vars | dict2items %}
+      {% if this.key | regex_search('^Group_') is not none %}
+        "{{ this.key[6:] }}": {{ this.value }},
+      {% endif %}{# this.key | regex(group) #}
+    {% endfor %}{# this in vars #}
+  }
 Active_Groups: |-
   {
-    {% for alphabet_index in letter_array %}
-      {% for lug in lookup('vars', 'lugs_' + alphabet_index, default={}) | dict2items %}
-        '{{ lug.key }}': {{ lug.value }},
-      {% endfor %}
-    {% endfor %}
+    {% for this in Active_and_Inactive_Groups | dict2items %}
+      {% if this.value.status | default('') | lower == 'active' %}
+        "{{ this.key }}": {{ this.value }},
+      {% endif %}{# this.value.status == 'Active' #}
+    {% endfor %}{# this in Active_and_Inactive_Groups #}
   }
 Inactive_Groups: |-
   {
-    {% for alphabet_index in letter_array %}
-      {% for lug in lookup('vars', 'gone_lugs_' + alphabet_index, default={}) | dict2items %}
-        '{{ lug.key }}': {{ lug.value }},
-      {% endfor %}
-    {% endfor %}
+    {% for this in Active_and_Inactive_Groups | dict2items %}
+      {% if this.value.status | default('') | lower != 'active' %}
+        "{{ this.key }}": {{ this.value }},
+      {% endif %}{# this.value.status == 'Active' #}
+    {% endfor %}{# this in Active_and_Inactive_Groups #}
   }
-Active_and_Inactive_Groups: |-
+Hosted_Groups: |-
   {
-    {% for item in Active_Groups | dict2items %}
-      '{{ item.key }}': {{ item.value }},
-    {% endfor %}
-    {% for item in Inactive_Groups | dict2items %}
-      '{{ item.key }}': {{ item.value }},
-    {% endfor %}
+    {% for this in Active_and_Inactive_Groups | dict2items %}
+      {% if this.value.dns_name | default('') != '' %}
+        "{{ this.key }}": {{ this.value }},
+      {% endif %}{# this.value.status == 'Active' #}
+    {% endfor %}{# this in Active_and_Inactive_Groups #}
   }

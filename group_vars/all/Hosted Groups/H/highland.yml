@@ -1,0 +1,12 @@
+---
+Group_highland:
+  notes: Website gone.
+  last_checked: "2017-11-14"
+
+  contact_address: "{{ protected_email_addresses.highland_lug_lugmaster }}"
+  contact: Brian MacKenzie
+
+  dns_name: highland
+  web_hosting:
+    on: web-01
+    type: inactive

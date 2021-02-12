@@ -1,0 +1,22 @@
+---
+Group_menai:
+  notes: Last posting to ML was 2010.
+  established_date: "2002-12-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-17"
+  status: Gone
+
+  title: Menai
+  categories: Wales
+  permalink: lugs/Wales/Menai/
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/menai/
+  contact_address: "{{ protected_email_addresses.menai_lug_lugmaster }}"
+  contact: Kevin Donnelly
+
+  mailman: menai
+  dns_name: Menai
+  web_hosting:
+    via: "{{ primary_suffix }}"
+    to: https://mailman.lug.org.uk/mailman/listinfo/menai/
+

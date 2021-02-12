@@ -1,0 +1,14 @@
+---
+Group_north_of_scotland:
+  notes: 2021-02-12 Website no longer resolves.
+  established_date: "2009-12-01"
+  last_updated: "2021-02-12"
+  status: Gone
+
+  title: North of Scotland
+  categories: Scotland
+  permalink: lugs/Scotland/North-of-Scotland/
+
+  contact_address: "{{ protected_email_addresses.north_of_scotland_lug_lugmaster }}"
+  contact: Stephen Kenneth Fuller
+

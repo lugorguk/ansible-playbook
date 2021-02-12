@@ -1,0 +1,12 @@
+---
+Group_orpington:
+  notes: Website gone.
+  last_checked: "2017-11-19"
+  state: Gone
+
+  title: Orpington LUG
+
+  dns_name: orpington
+  web_hosting:
+    on: web-01
+    type: Inactive

@@ -1,0 +1,14 @@
+---
+Group_ucolfaq:
+  notes: Website directs to a valid, but unconfigured host.
+  last_checked: "2017-11-20"
+
+  title: UK.Comp.OS.Linux FAQ
+
+  contact_address: "{{ protected_email_addresses.ucolfaq_contact }}"
+  contact: Richard Kettlewell
+
+  dns_name: ucolfaq
+  extra_dns_records:
+    - type: CNAME
+      record: chiark.greenend.org.uk.

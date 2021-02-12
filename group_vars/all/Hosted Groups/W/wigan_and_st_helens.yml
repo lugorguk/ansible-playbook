@@ -1,0 +1,24 @@
+---
+Group_wigan_and_st_helens:
+  notes: Mailing list implied demise of the group around 2005ish, but was still active until 2011, promoting nearby groups.
+  established_date: "2002-08-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: Wigan and St. Helens
+  categories: North-West
+  permalink: lugs/North-West/Wigan and St. Helens/
+  location:
+    latitude: 53.55
+    longitude: -2.63
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wishlug/
+  contact_address: "{{ protected_email_addresses.wigan_lug_lugmaster }}"
+  contact: Paul F. Johnson
+
+  mailman: wishlug
+  dns_name: wishlug
+  web_hosting:
+    on: web-01
+    type: inactive

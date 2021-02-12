@@ -1,0 +1,14 @@
+---
+Group_inverness:
+  notes: Website gone. Mailing list inactive since 2006
+  last_checked: "2017-11-14"
+
+  title: Inverness LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/inverness
+
+  mailman: inverness
+  dns_name: inverness
+  web_hosting: 
+    on: web-01
+    type: inactive

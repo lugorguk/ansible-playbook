@@ -1,0 +1,37 @@
+---
+Group_miltonkeynes:
+    established_date: "1999-01-01"
+    last_update: "2009-12-01"
+    status: Active
+
+    title: Milton Keynes
+    categories: South-East
+    permalink: lugs/South-East/Milton Keynes/
+    location:
+      latitude: 52.04
+      longitude: -0.76
+
+    website: https://www.mk.lug.org.uk
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/mk/
+    contact_address: "{{ protected_email_addresses.mk_lug_contact }}"
+    contact: Gavin Westwood
+
+    mailman: mk
+    dns_name: mk
+    mail_hosting: "{{ default_mx }}"
+    email_redirects:
+    - target: "{{ protected_email_addresses.mk_lug_lugmaster }}"
+      alias:
+      - info
+      - lugmaster
+      - webmaster
+    extra_dns_records:
+    - type: CNAME
+      target: wiki.mk
+      record: hosting.solutium.co.uk.
+    - type: DNAME
+      record: snm.lug.org.uk.
+    - type: SPF
+      record: v=spf1 a mx -all
+    - type: TXT
+      record: v=spf1 a mx -all

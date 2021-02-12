@@ -1,0 +1,28 @@
+---
+Group_bristol_and_bath:
+  established_date: "1998-06-01"
+  last_update: "2019-02-01"
+  last_checked: "2017-11-11"
+  status: Active
+
+  title: Bristol and Bath
+  categories: South-West
+  permalink: lugs/South-West/Bristol and Bath/
+  location:
+    latitude: 51.45
+    longitude: -2.59
+
+  website: https://bristol.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bristol/
+  contact_address: "{{ protected_email_addresses.bristol_lug_lugmaster2 }}"
+  contact: David Fear
+
+  mailman: bristol
+  dns_name: bristol
+  extra_dns_records:
+  - type: NS
+    record: ns1.digitalocean.com.
+  - type: NS
+    record: ns2.digitalocean.com.
+  - type: NS
+    record: ns3.digitalocean.com.

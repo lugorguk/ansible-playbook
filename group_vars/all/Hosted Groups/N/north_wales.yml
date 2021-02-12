@@ -1,0 +1,24 @@
+---
+Group_north_wales:
+  notes: 2021-02-12 Mailing list still active 2020-12.
+  established_date: "2000-07-01"
+  last_update: "2010-04-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: North-Wales
+  categories: Wales
+  permalink: lugs/Wales/North-Wales/
+  location:
+    latitude: 53.07
+    longitude: -3.81
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/northwales/
+  contact_address: "{{ protected_email_addresses.north_wales_lug_contact }}"
+  contact: Andrew Hutchings
+
+  mailman: northwales
+  dns_name: northwales
+  web_hosting:
+    via: web-01
+    to: https://mailman.lug.org.uk/mailman/listinfo/northwales/

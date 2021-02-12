@@ -1,6 +1,0 @@
-gone_lugs_j:
-  JSUC:
-    dns_name: jsuc
-    web_hosting: "{{ primary_suffix }}"
-    last_checked: "2017-11-14"
-    notes: Website gone

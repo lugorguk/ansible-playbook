@@ -1,0 +1,15 @@
+---
+Group_doncaster_scunthorpe:
+  notes: DNS does not resolve.
+  established_date: "1999-07-01"
+  last_update: "2009-12-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Doncaster & Scunthorpe
+  categories: Yorkshire-and-Humber
+  permalink: lugs/Yorkshire-and-Humber/Doncaster & Scunthorpe
+
+  contact_address: "{{ protected_email_addresses.doncaster_lug_lugmaster }}"
+  contact: Shaun Holt
+

@@ -1,0 +1,10 @@
+---
+Group_ssom:
+  notes: Website gone. Mailing list shows last post in 2009.
+  last_checked: "2017-11-20"
+  status: Gone
+
+  title: South Somerset LUG
+
+  contact_address: "{{ protected_email_addresses.ssom_lug_lugmaster }}"
+  contact: Darren Mallinson

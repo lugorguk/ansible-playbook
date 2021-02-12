@@ -1,0 +1,30 @@
+---
+Group_lincoln:
+  established_date: "2011-08-01"
+  last_update: "2019-02-01"
+  status: Active
+
+  title: Lincoln
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Lincoln/
+  location:
+    latitude: 53.23
+    longitude: -0.54
+
+  website: https://lincolnlug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/lincoln
+  contact_address: "{{ protected_email_addresses.lincoln_lug_lugmaster2 }}"
+  contact: Philip Newborough
+
+  mailman: lincoln
+  dns_name: lincoln
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+    - target: "{{ protected_email_addresses.lincoln_lug_lugmaster }}"
+      alias:
+      - info
+      - webmaster
+      - lugmaster
+  web_hosting:
+    via: snm
+    to: https://lincolnlug.org.uk

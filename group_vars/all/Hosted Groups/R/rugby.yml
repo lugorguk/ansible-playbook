@@ -1,0 +1,35 @@
+---
+Group_rugby:
+  notes: 2021-02-12 Website updated, mailing list active.
+  established_date: "2004-01-01"
+  last_update: "2011-08-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Rugby
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Rugby/
+  location:
+    latitude: 52.37
+    longitude: -1.27
+
+  website: https://rugby.lug.org.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/rugby
+  contact_address: "{{ protected_email_addresses.rugby_lug_contact }}"
+  contact: Nick Morrott
+
+  mailman: rugby
+  dns_name: rugby
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.rugby_lug_contact }}"
+    alias:
+    - sfd
+    - enquiries
+  web_hosting:
+    on: snm
+    type: static
+  extra_dns_records:
+  - type: CNAME
+    target: test.rugby
+

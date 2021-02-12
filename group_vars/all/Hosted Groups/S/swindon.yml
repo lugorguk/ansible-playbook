@@ -1,0 +1,21 @@
+---
+Group_swindon:
+    notes: Redirect non-responsive. Mailing list inactive since 2016.
+    established_date: "2016-02-01"
+    last_update: "2016-09-01"
+    last_checked: "2021-02-12"
+    status: Gone
+
+    title: Swindon
+    categories: South-West
+    permalink: lugs/South-West/Swindon/
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/swindon
+    contact_address: "{{ protected_email_addresses.swindon_lug_lugmaster }}"
+    contact: Tom Earl
+
+    mailman: swindon
+    dns_name: swindon
+    web_hosting:
+      on: web-01
+      type: inactive

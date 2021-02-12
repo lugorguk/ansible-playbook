@@ -1,0 +1,11 @@
+---
+Group_north_london:
+  notes: 2021-02-12 Website gone.
+  last_checked: "2017-11-19"
+
+  title: NorthLondon LUG
+
+  dns_name: northlondon
+  web_hosting:
+    on: web-01
+    type: inactive

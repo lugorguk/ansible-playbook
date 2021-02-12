@@ -1,0 +1,11 @@
+---
+Group_walton_on_thames:
+  notes: Website gone.
+  last_checked: "2017-11-20"
+
+  title: Walton On Thames LUG
+
+  dns_name: wot
+  web_hosting:
+    on: web-01
+    type: inactive

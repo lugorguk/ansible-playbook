@@ -1,0 +1,14 @@
+---
+Group_north_derbyshire:
+  notes: Website gone.
+  last_checked: "2017-11-19"
+
+  title: North Derbyshire LUG
+
+  contact_address: "{{ protected_email_addresses.north_derbyshire_lug_lugmaster }}"
+  contact: Claire Currie
+
+  dns_name: nderbys
+  web_hosting:
+    on: web-01
+    type: inactive

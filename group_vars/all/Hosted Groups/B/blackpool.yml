@@ -1,0 +1,24 @@
+---
+Group_blackpool:
+  established_date: "2004-01-01"
+  last_update: "2015-11-01"
+  last_checked: "2017-11-11"
+  status: Active
+
+  title: Blackpool
+  categories: North-West
+  permalink: lugs/North-West/Blackpool/
+  location:
+    latitude: 53.82
+    longitude: -3.04
+
+  website: https://blackpoolmakerspace.wordpress.com/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/blackpool/
+  contact_address: "{{ protected_email_addresses.blackpool_lug_lugmaster }}"
+  contact: Mike Hewitt
+
+  mailman: blackpool
+  dns_name: blackpool
+  web_hosting:
+    via: web-01
+    to: https://blackpoolmakerspace.wordpress.com/

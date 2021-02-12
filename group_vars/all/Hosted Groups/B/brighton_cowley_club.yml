@@ -1,0 +1,17 @@
+---
+Group_brighton_cowley_club:
+  established_date: "2015-10-01"
+  last_update: "2015-10-01"
+  status: Active
+
+  title: Cowley Club, Brighton
+  categories: South-East
+  permalink: lugs/South-East/Cowley Club, Brighton/
+  location:
+    latitude: 50.8303
+    longitude: -0.1362
+
+  website: https://cowley.club/news/event/free-software-clinic/
+  contact_address: "{{ protected_email_addresses.cowleyclubbrighton_contact }}"
+  contact: Cowley Library Volunteers
+

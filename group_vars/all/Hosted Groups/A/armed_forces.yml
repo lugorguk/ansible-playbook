@@ -1,0 +1,9 @@
+---
+Group_armedforces:
+  notes: Web host contains content, but is basically a pointer to a mailing list which has been removed. No mail aliases exist.
+  last_checked: "2017-11-12"
+
+  dns_name: armedforces
+  web_hosting:
+    on: snm
+    type: static

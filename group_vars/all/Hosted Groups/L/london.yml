@@ -1,0 +1,14 @@
+---
+Group_london:
+  notes: 2021-01-27 DNS resolves, but no website is rendered.
+  last_update: "2009-12-01"
+  last_checked: "2021-01-27"
+  status: Gone
+
+  title: London (LONIX)
+  categories: London
+  permalink: lugs/London/London (LONIX) # Fixed
+
+  website: http://www.lonix.org.uk
+  contact_address: "{{ protected_email_addresses.lonix_lug_lugmaster }}"
+  contact: Tushar Joshi

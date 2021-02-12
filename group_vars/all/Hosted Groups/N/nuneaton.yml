@@ -1,0 +1,19 @@
+---
+Group_nuneaton:
+  established_date: "2002-08-01"
+  last_update: "2016-09-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: Nuneaton
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Nuneaton/
+  location:
+    latitude: 52.52
+    longitude: -1.47
+
+  dns_name: Nuneaton
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    on: web-01
+    type: inactive

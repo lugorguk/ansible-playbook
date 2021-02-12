@@ -1,0 +1,24 @@
+---
+Group_kent:
+  notes: Checked 2021-01-27 last post to ML was 2019. Website invites clicks through to ML, and no other content.
+  last_update: "2010-04-01"
+  last_checked: "2021-01-27"
+  status: Active
+
+  title: Kent
+  categories: South-East
+  permalink: lugs/South-East/Kent/
+  location:
+    latitude: 51.28
+    longitude: 0.52
+
+  website: http://kentlug.org
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/kent/
+  contact_address: "{{ protected_email_addresses.kent_lug_lugmaster }}"
+  contact: Dan Attwood
+
+  mailman: kent
+  dns_name: kent
+  web_hosting:
+    via: web-01
+    to: http://kentlug.org

@@ -1,0 +1,30 @@
+---
+Group_portsmouth_and_southeast_hampshire:
+  established_date: "2005-01-01"
+  last_update: "2020-10-01"
+  status: Active
+
+  title: Portsmouth and South-East Hampshire
+  categories: South-East
+  permalink: lugs/South-East/Portsmouth and South-East Hampshire/
+  location:
+    latitude: 50.82
+    longitude: -1.09
+
+  website: https://www.portsmouth.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/portsmouth/
+  contact_address: "{{ protected_email_addresses.portsmouth_lug_lugmaster }}"
+  contact: Paul Tansom
+
+  mailman: portsmouth
+  dns_name: portsmouth
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: "{{ protected_email_addresses.portsmouth_lug_lugmaster }}"
+    alias:
+    - lugmaster
+    - webmaster
+    - info
+  web_hosting:
+    on: snm
+    type: static

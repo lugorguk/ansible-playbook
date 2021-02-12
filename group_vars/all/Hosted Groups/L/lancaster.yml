@@ -1,0 +1,21 @@
+---
+Group_lancaster:
+  notes: DNS redirect to lancasterlug.org.uk, no IP associated.
+  established_date: "2002-09-01"
+  last_update: "2014-11-01"
+  last_checked: "2017-11-11"
+  status: Gone
+
+  title: Lancaster
+  categories: North-West
+  permalink: lugs/North-West/Lancaster # Fixed
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/lancaster/
+  contact_address: "{{ protected_email_addresses.lancaster_lug_contact }}"
+  contact: Wayne Ward
+
+  mailman: lancaster
+  dns_name: lancaster
+  web_hosting:
+    on: web-01
+    type: inactive

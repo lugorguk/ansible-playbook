@@ -1,0 +1,24 @@
+---
+Group_chester:
+  notes: HTTP returns 403, HTTPS returns Dreamhost holding page. Mailing list last activity Aug 2019. Presumed Gone.
+  established_date: "2006-07-01"
+  last_update: "2012-09-01"
+  last_checked: "2021-01-05"
+  status: Gone
+
+  title: Chester
+  categories: North-West
+  permalink: lugs/North-West/Chester/
+  location:
+    latitude: 53.19
+    longitude: -2.89
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/chester/
+  contact_address: "{{ protected_email_addresses.chester_lug_lugmaster }}"
+  contact: Les Pritchard
+
+  mailman: chester
+  dns_name: chester
+  web_hosting:
+    on: web-01
+    type: inactive

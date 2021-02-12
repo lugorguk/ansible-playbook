@@ -1,0 +1,21 @@
+---
+Group_bassetlaw:
+  notes: bassetlug.org.uk no longer registered. Mailing list inactive since 2016
+  established_date: "2004-10-01"
+  last_update: "2019-01-16"
+  last_checked: "2019-01-16"
+  status: Gone
+
+  title: Bassetlaw
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Bassetlaw
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/bassetlug/
+  contact_address: "{{ protected_email_addresses.bassetlug_lug_lugmaster }}"
+  contact: Danny Roberts
+
+  mailman: bassetlug
+  dns_name: basset
+  web_hosting:
+    on: web-01
+    type: inactive

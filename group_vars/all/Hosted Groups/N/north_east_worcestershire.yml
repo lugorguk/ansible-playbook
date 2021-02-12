@@ -1,0 +1,26 @@
+---
+Group_north_east_worcestershire:
+  notes: 2021-02-12 Website last updated 2011, mailing list last post 2011
+  established_date: "2011-01-01"
+  last_update: "2011-12-01"
+  last_checked: "2021-02-12"
+  status: Gone
+
+  title: North-East Worcestershire
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/North-East Worcestershire/
+  location:
+    latitude: 52.22
+    longitude: -1.87
+
+  website: https://www.new.lug.org.uk/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/newlug
+  contact_address: "{{ protected_email_addresses.north_east_worcestershire_lug_contact }}"
+  contact: Doug Mills
+
+  mailman: newlug
+  dns_name: new
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    on: web-01
+    type: static

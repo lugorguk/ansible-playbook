@@ -1,0 +1,20 @@
+---
+Group_students:
+  notes: Website gone, ML gone.
+  last_update: "2010-04-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: Students
+  categories: Other
+  permalink: lugs/Other/Students/
+
+  contact_address: "{{ protected_email_addresses.students_lug_lugmaster }}"
+  contact: Jamie Davies
+
+  dns_name: Students
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    on: web-01
+    type: inactive
+

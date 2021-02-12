@@ -1,0 +1,11 @@
+---
+Group_scotborders:
+  notes: Website gone
+  last_checked: "2017-11-19"
+
+  title: Scottish Borders LUG
+
+  dns_name: scotborders
+  web_hosting:
+    on: web-01
+    type: inactive

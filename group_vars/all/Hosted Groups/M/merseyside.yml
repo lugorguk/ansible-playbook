@@ -1,0 +1,17 @@
+---
+Group_merseyside:
+  notes: Website gone, mailing list last active 2010.
+  established_date: "2004-07-26"
+  last_checked: "2017-11-17"
+
+  title: Merseyside LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/merseyside
+  contact_address: "{{ protected_email_addresses.merseyside_lug_lugmaster }}"
+  contact: Darren Jones
+
+  mailman: merseyside
+  dns_name: merseyside
+  web_hosting: 
+    on: web-01
+    type: inactive

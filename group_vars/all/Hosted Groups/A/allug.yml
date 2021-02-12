@@ -1,0 +1,9 @@
+---
+Group_allug:
+    notes: No presence on lug.org.uk services, aside from DNS
+    last_checked: "2017-11-12"
+
+    dns_name: allug
+    web_hosting:
+      on: web-01
+      type: inactive

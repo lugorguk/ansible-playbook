@@ -1,0 +1,12 @@
+---
+Group_york:
+    notes: Website gone. Last mailing list activity 2014.
+    last_checked: "2017-11-20"
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/york
+
+    mailman: york
+    dns_name: york
+    web_hosting:
+      on: web-01
+      type: inactive

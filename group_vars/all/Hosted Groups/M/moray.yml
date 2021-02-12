@@ -1,0 +1,12 @@
+---
+Group_moray:
+    notes: Website gone.
+    last_checked: "2017-11-19"
+
+    title: Isle of Moray LUG
+
+    dns_name: moray
+    web_hosting:
+      on: web-01
+      type: inactive
+

@@ -1,0 +1,25 @@
+---
+Group_derbyshire_south:
+  notes: Post to ML in 2020-02, however, no response to that initial post, and nothing since 2016 before then.
+  established_date: "2000-04-01"
+  last_update: "2013-01-01"
+  last_checked: "2021-01-24"
+  status: Gone
+
+  title: Derbyshire - South
+  categories: East-Midlands
+  permalink: lugs/East-Midlands/Derbyshire - South/
+  location:
+    latitude: 52.92
+    longitude: -1.47
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sderby/
+  contact_address: "{{ protected_email_addresses.derbyshire_south_lug_lugmaster }}"
+  contact: Clare Currie
+
+  mailman: sderby
+  dns_name: sderby
+  mail_hosting: "{{ default_mx }}"
+  web_hosting:
+    via: web-01
+    to: https://mailman.lug.org.uk/mailman/listinfo/sderby/

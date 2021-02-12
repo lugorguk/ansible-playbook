@@ -1,0 +1,19 @@
+---
+Group_rossendale:
+  notes: 2021-02-12 Let's Encrypt TLS expired 2019-07-24
+  established_date: "2010-10-01"
+  last_update: "2014-02-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Rossendale LUG
+  categories: North-West
+  permalink: lugs/North-West/Rossendale LUG/
+  location:
+    latitude: 53.69
+    longitude: -2.26
+
+  website: http://www.rosslug.org.uk
+  mailing_list: https://www.rosslug.org.uk/mailman/listinfo/rosslug
+  contact_address: "{{ protected_email_addresses.rossendale_lug_lugmaster }}"
+  contact: Jon Archer

@@ -1,0 +1,24 @@
+---
+Group_sussex:
+  notes: 2021-02-12 Mailing list only carries Portsmouth LUG since 2019.
+  established_date: "1999-04-01"
+  last_update: "2010-04-01"
+  last_checked: "2021-02-12"
+  status: Active
+
+  title: Sussex
+  categories: South-East
+  permalink: lugs/South-East/Sussex/
+  location:
+    latitude: 50.91
+    longitude: 0.25
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/sussex/
+  contact_address: "{{ protected_email_addresses.sussex_lug_lugmaster }}"
+  contact: Steve Dobson
+
+  mailman: sussex
+  dns_name: sussex
+  web_hosting:
+    via: web-01
+    to: https://mailman.lug.org.uk/mailman/listinfo/sussex/

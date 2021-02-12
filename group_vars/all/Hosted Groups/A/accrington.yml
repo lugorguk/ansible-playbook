@@ -1,0 +1,15 @@
+---
+Group_accrington:
+  notes: Mailing list and DNS only exists. Mailing list has had no posts.
+  last_checked: "2017-11-12"
+  status: Gone
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/accrington/
+  contact_address: "{{ protected_email_addresses.accrington_lug_lugmaster }}"
+  contact: Ian Entwistle
+
+  mailman: accrington
+  dns_name: accrington
+  web_hosting:
+    on: web-01
+    type: inactive

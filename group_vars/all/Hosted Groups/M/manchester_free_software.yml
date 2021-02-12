@@ -1,0 +1,20 @@
+---
+Group_manchester_free_software:
+  notes: Website appears current and mailing list is active.
+  established_date: "2007-11-01"
+  last_update: "2010-10-01"
+  last_checked: "2021-01-29"
+  status: Active
+
+  title: Manchester Free Software
+  categories: North-West
+  permalink: lugs/North-West/Manchester Free Software/
+  location:
+    latitude: 53.48
+    longitude: -2.23
+
+  website: http://libreplanet.org/wiki/Manchester
+  mailing_list: http://lists.nongnu.org/mailman/listinfo/fsuk-manchester
+  contact_address: "{{ protected_email_addresses.manchesterfreesoftware_contact }}"
+  contact: Team MFS
+

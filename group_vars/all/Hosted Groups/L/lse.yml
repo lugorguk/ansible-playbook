@@ -1,0 +1,11 @@
+---
+Group_lse:
+  notes: Website and ML gone
+  last_checked: "2021-01-27"
+
+  title: London School of Economics LUG
+
+  dns_name: lse
+  web_hosting:
+    on: web-01
+    type: inactive

@@ -1,0 +1,31 @@
+---
+Group_herefordshire:
+  notes: "2021-01-26 Mailing list and website both still active."
+  established_date: "2004-06-01"
+  last_checked: "2021-01-26"
+  last_update: "2021-01-26"
+  status: Active
+
+  title: Herefordshire
+  categories: West-Midlands
+  permalink: lugs/West-Midlands/Herefordshire/
+  location:
+    latitude: 52.08
+    longitude: -2.65
+
+  website: http://www.herefordshire.lug.org.uk
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/herefordshire/
+  contact_address: "{{ protected_email_addresses.herefordshire_lug_lugmaster }}"
+  contact: Julian Robbins
+
+  mailman: herefordshire
+  dns_name: herefordshire
+  extra_dns_records:
+  - type: CNAME
+    record: hlug.org.uk.
+  - type: CNAME
+    target: hereford
+    record: hlug.org.uk.
+  - type: CNAME
+    target: www.hereford
+    record: hlug.org.uk.

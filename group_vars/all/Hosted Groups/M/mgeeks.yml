@@ -1,0 +1,11 @@
+---
+Group_mgeeks:
+  notes: Website gone.
+  last_checked: "2017-11-17"
+
+  title: Maritime Geeks (Chichester Harbour) LUG
+
+  dns_name: mgeeks
+  web_hosting:
+    on: web-01
+    type: inactive

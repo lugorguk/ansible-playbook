@@ -1,0 +1,24 @@
+---
+Group_watford:
+  notes: "No website, mailing list inactive since March 2016"
+  established_date: "2006-01-01"
+  last_update: "2010-04-01"
+  last_checked: "2017-11-12"
+  status: Gone
+
+  title: Watford
+  categories: London
+  permalink: lugs/London/Watford/
+  location:
+    latitude: 51.66
+    longitude: -0.39
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/watford/
+  contact_address: "{{ protected_email_addresses.watford_lug_lugmaster }}"
+  contact: Cliff Deamer
+
+  mailman: watford
+  dns_name: Watford
+  web_hosting: 
+    on: web-01
+    type: inactive

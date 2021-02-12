@@ -1,0 +1,11 @@
+---
+Group_leamington:
+  notes: Website gone.
+  last_checked: "2017-11-14"
+
+  title: Leamington Spa LUG
+
+  dns_name: leamington
+  web_hosting: 
+    on: web-01
+    type: inactive

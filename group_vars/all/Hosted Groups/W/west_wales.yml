@@ -1,0 +1,26 @@
+---
+Group_west_wales:
+  established_date: "2000-01-01"
+  last_update: "2015-01-01"
+  status: Active
+
+  title: West Wales
+  categories: Wales
+  permalink: lugs/Wales/West Wales/
+  location:
+    latitude: 52.42
+    longitude: -4.08
+
+  website: https://www.facebook.com/groups/117629405065588/
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/westwales/
+  contact_address: "{{ protected_email_addresses.westwales_lug_contact }}"
+  contact: Mike Sheldon
+
+  mailman: westwales
+  dns_name: westwales
+  web_hosting:
+    via: web-01
+    to: https://www.facebook.com/groups/117629405065588/
+  extra_dns_records:
+  - type: CNAME
+    target: west-wales

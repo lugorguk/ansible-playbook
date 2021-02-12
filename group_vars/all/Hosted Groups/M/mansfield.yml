@@ -1,0 +1,26 @@
+---
+Group_mansfield:
+    notes: Web page indicates 2014-01 was last activity. Mailing list last active 2016.
+    established_date: "2001-10-01"
+    last_update: "2010-04-01"
+    last_checked: "2021-01-29"
+    status: Gone
+
+    title: Mansfield
+    categories: East-Midlands
+    permalink: lugs/East-Midlands/Mansfield/
+    location:
+      latitude: 53.15
+      longitude: -1.2
+
+    website: http://www.mansfieldlug.org.uk/
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/mansfield/
+    contact_address: "{{ protected_email_addresses.mansfield_lug_lugmaster }}"
+    contact: Brent Vardy
+
+    mailman: mansfield
+    dns_name: Mansfield
+    mail_hosting: "{{ default_mx }}"
+    web_hosting:
+      via: "{{ primary_suffix }}"
+      to: http://www.mansfieldlug.org.uk/

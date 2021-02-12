@@ -1,0 +1,14 @@
+---
+Group_plymouth:
+  notes: Website gone.
+  last_checked: "2017-11-19"
+
+  title: Plymouth LUG
+
+  contact_address: "{{ protected_email_addresses.plymouth_lug_lugmaster }}"
+  contact: Anthony Bradley
+
+  dns_name: plymouth
+  web_hosting:
+    on: web-01
+    type: inactive

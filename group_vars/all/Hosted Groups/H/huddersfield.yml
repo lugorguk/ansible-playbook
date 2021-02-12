@@ -1,0 +1,19 @@
+---
+Group_huddersfield:
+    notes: Website gone. Mailing list inactive since 2014
+    last_checked: "2017-11-14"
+
+    title: Huddersfield LUG
+
+    mailing_list: https://mailman.lug.org.uk/mailman/listinfo/hudlug
+
+    mailman: hudlug
+    dns_name: hudlug
+    web_hosting:
+      on: web-01
+      type: inactive
+    extra_dns_records:
+    - type: CNAME
+      target: hud
+    - type: CNAME
+      target: www.hud

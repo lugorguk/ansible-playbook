@@ -1,0 +1,15 @@
+---
+Group_wiltshire:
+  notes: Website exists but notes that the group has wrapped up meetings (probably 201). Mailing list still in use.
+  last_checked: "2017-11-20"
+  status: Active
+
+  title: Wiltshire LUG
+
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/wiltshire
+
+  mailman: wiltshire
+  dns_name: wiltshire
+  web_hosting:
+    on: snm
+    type: static

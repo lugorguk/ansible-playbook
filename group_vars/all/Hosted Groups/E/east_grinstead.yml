@@ -1,0 +1,29 @@
+---
+Group_east_grinstead:
+  established_date: "2006-11-01"
+  last_update: "2019-04-01"
+  last_checked: "2021-01-13"
+  status: Active
+
+  title: East Grinstead
+  categories: South-East
+  permalink: lugs/South-East/East Grinstead
+
+  website: https://eg.lug.org.uk/wiki
+  mailing_list: https://mailman.lug.org.uk/mailman/listinfo/eg/
+  contact_address: "{{ protected_email_addresses.eastgrinstead_lug_lugmaster }}"
+  contact: Peter Jones
+
+  mailman: eg
+  dns_name: eg
+  mail_hosting: "{{ default_mx }}"
+  email_redirects:
+  - target: info
+    alias:
+    - "{{ protected_email_addresses.eastgrinstead_contact_peterjones }}"
+  - target: lugmaster
+    alias:
+    - "{{ protected_email_addresses.eastgrinstead_contact_peterjones }}"
+  - target: webmaster
+    alias:
+    - "{{ protected_email_addresses.eastgrinstead_contact_peterjones }}"

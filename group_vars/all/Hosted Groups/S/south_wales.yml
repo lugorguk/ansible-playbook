@@ -1,0 +1,25 @@
+---
+Group_south_wales:
+    notes: 2021-02-12 Website and Mailing List active.
+    established_date: "2002-01-01"
+    last_update: "2013-11-01"
+    last_checked: "2021-02-12"
+    status: Active
+
+    title: South Wales
+    categories: Wales
+    permalink: lugs/Wales/South Wales/
+    location:
+      latitude: 51.48
+      longitude: -3.18
+
+    website: https://swlug.org.uk
+    mailing_list: http://mailman.lug.org.uk/mailman/listinfo/swlug/
+    chat: irc://irc.oftc.net/#swlug
+
+    mailman: swlug
+    dns_name: southwales
+    web_hosting:
+      via: web-01
+      to: http://swlug.org.uk
+
