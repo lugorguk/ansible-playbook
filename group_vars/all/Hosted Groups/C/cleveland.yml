@@ -11,6 +11,6 @@ Group_cleveland:
   mailman: cleveland
   dns_name: cleveland
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
 

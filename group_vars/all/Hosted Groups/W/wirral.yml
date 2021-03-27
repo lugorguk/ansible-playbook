@@ -10,5 +10,5 @@ Group_wirral:
   mailman: wirral
   dns_name: Wirral
   web_hosting:
-    on: snm
+    host: snm
     type: inactive

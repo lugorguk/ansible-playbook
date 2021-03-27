@@ -15,5 +15,5 @@ Group_nuneaton:
   dns_name: Nuneaton
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

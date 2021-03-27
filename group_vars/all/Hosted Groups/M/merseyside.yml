@@ -13,5 +13,5 @@ Group_merseyside:
   mailman: merseyside
   dns_name: merseyside
   web_hosting: 
-    on: web-01
+    host: web-01
     type: inactive

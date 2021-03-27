@@ -17,5 +17,5 @@ Group_lancaster:
   mailman: lancaster
   dns_name: lancaster
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

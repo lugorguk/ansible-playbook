@@ -7,6 +7,6 @@ Group_moray:
 
     dns_name: moray
     web_hosting:
-      on: web-01
+      host: web-01
       type: inactive
 

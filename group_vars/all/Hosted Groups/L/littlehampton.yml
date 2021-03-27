@@ -10,5 +10,5 @@ Group_littlehampton:
   mailman: littlehampton
   dns_name: littlehampton
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

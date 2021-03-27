@@ -15,5 +15,5 @@ Group_north_west_london:
 
   dns_name: northwestlondon
   web_hosting: 
-    on: web-01
+    host: web-01
     type: inactive

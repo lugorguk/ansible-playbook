@@ -18,5 +18,5 @@ Group_preston_lancashire:
   mailman: preston
   dns_name: preston
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

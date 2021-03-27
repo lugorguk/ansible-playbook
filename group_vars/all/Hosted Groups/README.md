@@ -140,7 +140,7 @@ Hosted content:
 
 ```yaml
 web_hosting:
-  on: snm
+  host: snm
   type: static # may also be dokuwiki or abusemod
 ```
 
@@ -148,7 +148,7 @@ Inactive:
 
 ```yaml
 web_hosting:
-  on: web-01
+  host: web-01
   type: inactive
 ```
 

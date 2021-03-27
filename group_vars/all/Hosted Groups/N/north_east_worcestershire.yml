@@ -22,5 +22,5 @@ Group_north_east_worcestershire:
   dns_name: new
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: web-01
+    host: web-01
     type: static

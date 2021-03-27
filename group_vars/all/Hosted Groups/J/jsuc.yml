@@ -5,11 +5,5 @@ Group_jsuc:
 
   dns_name: jsuc
   web_hosting: 
-    on: web-01
+    host: web-01
     type: inactive
-
-  # DNS Records: 
-  # jsuc            IN    A    web-01
-  #             IN    MX    10 mail-in-01
-  #                         IN      MX      20 mail-in-01.glug.org.uk.
-  # www.jsuc        IN    A    web-01

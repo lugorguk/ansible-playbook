@@ -30,5 +30,5 @@ Group_dorset:
     alias:
     - ekgbixdi
   web_hosting: 
-    on: snm
+    host: snm
     type: dokuwiki

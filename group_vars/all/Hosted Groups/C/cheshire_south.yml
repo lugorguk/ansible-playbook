@@ -16,7 +16,7 @@ Group_cheshire_south:
 
   mailman: sc
   dns_name: sc
-  website_hosting:
-    on: web-01
+  web_hosting:
+    host: web-01
     type: inactive
 

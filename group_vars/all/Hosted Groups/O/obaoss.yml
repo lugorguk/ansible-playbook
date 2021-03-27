@@ -11,5 +11,5 @@ Group_obaoss:
   mailman: obaoss
   dns_name: obaoss
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

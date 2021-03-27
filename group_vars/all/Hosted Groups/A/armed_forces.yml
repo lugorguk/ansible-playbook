@@ -5,5 +5,5 @@ Group_armedforces:
 
   dns_name: armedforces
   web_hosting:
-    on: snm
+    host: snm
     type: static

@@ -20,7 +20,7 @@ Group_tyneside:
   mailman: tyneside
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: snm
+    host: snm
     type: dokuwiki
   email_redirects:
   - target: "{{ protected_email_addresses.tyneside_lug_contact }}"

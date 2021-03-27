@@ -24,7 +24,7 @@ Group_bedford:
     alias:
     - "{{ protected_email_addresses.bedford_lug_contact }}"
   web_hosting:
-    on: snm
+    host: snm
     type: static
   extra_dns_records:
   - type: CNAME

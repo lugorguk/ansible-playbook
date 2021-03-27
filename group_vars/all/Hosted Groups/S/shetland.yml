@@ -7,5 +7,5 @@ Group_shetland:
 
   dns_name: shetland
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

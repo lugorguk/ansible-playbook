@@ -27,7 +27,7 @@ Group_rugby:
     - sfd
     - enquiries
   web_hosting:
-    on: snm
+    host: snm
     type: static
   extra_dns_records:
   - type: CNAME

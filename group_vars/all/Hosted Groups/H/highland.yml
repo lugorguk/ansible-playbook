@@ -8,5 +8,5 @@ Group_highland:
 
   dns_name: highland
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

@@ -7,6 +7,6 @@ Group_truro_school:
 
   dns_name: tslug
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
 
