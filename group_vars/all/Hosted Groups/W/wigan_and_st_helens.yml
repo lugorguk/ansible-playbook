@@ -20,5 +20,5 @@ Group_wigan_and_st_helens:
   mailman: wishlug
   dns_name: wishlug
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

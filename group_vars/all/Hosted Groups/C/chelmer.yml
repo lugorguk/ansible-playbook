@@ -30,6 +30,6 @@ Group_chelmer:
     alias:
     - "{{ protected_email_addresses.chelmer_lug_lugmaster }}"
   web_hosting:
-    on: snm
+    host: snm
     type: inactive
 

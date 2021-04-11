@@ -8,5 +8,5 @@ Group_orpington:
 
   dns_name: orpington
   web_hosting:
-    on: web-01
+    host: web-01
     type: Inactive

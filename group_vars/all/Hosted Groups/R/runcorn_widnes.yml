@@ -18,5 +18,5 @@ Group_runcorn_widnes:
   mailman: runcornwidnes
   dns_name: runcornwidnes
   web_hosting:
-    on: snm
+    host: snm
     type: inactive

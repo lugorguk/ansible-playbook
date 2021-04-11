@@ -17,5 +17,5 @@ Group_bassetlaw:
   mailman: bassetlug
   dns_name: basset
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

@@ -20,5 +20,5 @@ Group_west_lothian:
     mailman: westlothian
     dns_name: westlothian
     web_hosting:
-      on: web-01
+      host: web-01
       type: inactive

@@ -25,7 +25,7 @@ Group_worcester:
     - lugmaster
     - webmaster
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
   extra_dns_records:
   - type: CNAME

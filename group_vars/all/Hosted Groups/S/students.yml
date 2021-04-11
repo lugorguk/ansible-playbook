@@ -15,6 +15,6 @@ Group_students:
   dns_name: Students
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
 

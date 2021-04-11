@@ -18,6 +18,6 @@ Group_brixton:
 
   dns_name: blug
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
 

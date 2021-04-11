@@ -11,5 +11,5 @@ Group_wiltshire:
   mailman: wiltshire
   dns_name: wiltshire
   web_hosting:
-    on: snm
+    host: snm
     type: static

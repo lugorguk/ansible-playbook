@@ -11,5 +11,5 @@ Group_accrington:
   mailman: accrington
   dns_name: accrington
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

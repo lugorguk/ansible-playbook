@@ -26,5 +26,5 @@ Group_st_andrews:
     alias:
     - "{{ protected_email_addresses.saint_andrews_lug_lugmaster }}"
   web_hosting:
-    on: snm
+    host: snm
     type: static

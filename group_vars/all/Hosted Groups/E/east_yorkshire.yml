@@ -7,5 +7,5 @@ Group_east_yorkshire:
 
   dns_name: eyorks
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

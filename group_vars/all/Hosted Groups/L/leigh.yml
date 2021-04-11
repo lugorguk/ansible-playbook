@@ -25,5 +25,5 @@ Group_leigh:
     - webmaster
     - lugmaster
   web_hosting: 
-    on: snm
+    host: snm
     type: inactive

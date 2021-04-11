@@ -7,5 +7,5 @@ Group_lse:
 
   dns_name: lse
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

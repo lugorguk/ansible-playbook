@@ -20,5 +20,5 @@ Group_watford:
   mailman: watford
   dns_name: Watford
   web_hosting: 
-    on: web-01
+    host: web-01
     type: inactive

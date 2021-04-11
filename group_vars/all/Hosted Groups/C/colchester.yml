@@ -23,4 +23,5 @@ Group_colchester:
   extra_dns_records:
   - type: A
     record: 178.63.103.150
-
+  - type: CNAME
+    target: www

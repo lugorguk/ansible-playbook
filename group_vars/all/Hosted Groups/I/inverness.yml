@@ -10,5 +10,5 @@ Group_inverness:
   mailman: inverness
   dns_name: inverness
   web_hosting: 
-    on: web-01
+    host: web-01
     type: inactive

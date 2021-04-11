@@ -7,5 +7,5 @@ Group_mgeeks:
 
   dns_name: mgeeks
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

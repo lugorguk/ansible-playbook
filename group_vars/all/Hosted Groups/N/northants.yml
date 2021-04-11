@@ -23,5 +23,5 @@ Group_northants:
   dns_name: northants
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: snm
+    host: snm
     type: static

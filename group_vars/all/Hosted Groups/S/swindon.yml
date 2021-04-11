@@ -17,5 +17,5 @@ Group_swindon:
     mailman: swindon
     dns_name: swindon
     web_hosting:
-      on: web-01
+      host: web-01
       type: inactive

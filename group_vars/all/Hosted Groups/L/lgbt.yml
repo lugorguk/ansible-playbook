@@ -18,5 +18,5 @@ Group_lgbt:
   dns_name: lgbt
   mail_hosting: "{{ default_mx }}"
   web_hosting:
-    on: "{{ primary_suffix }}"
+    host: "{{ primary_suffix }}"
     type: inactive

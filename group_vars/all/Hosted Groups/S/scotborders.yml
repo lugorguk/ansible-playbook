@@ -7,5 +7,5 @@ Group_scotborders:
 
   dns_name: scotborders
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

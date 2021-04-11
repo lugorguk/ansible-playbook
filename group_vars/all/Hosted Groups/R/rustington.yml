@@ -25,5 +25,5 @@ Group_rustington:
     - webmaster
     - lugmaster
   web_hosting:
-    on: web-01
+    host: web-01
     type: php

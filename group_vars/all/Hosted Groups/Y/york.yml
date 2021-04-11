@@ -8,5 +8,5 @@ Group_york:
     mailman: york
     dns_name: york
     web_hosting:
-      on: web-01
+      host: web-01
       type: inactive

@@ -5,5 +5,5 @@ Group_aylesbury:
 
   dns_name: aylesbury
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

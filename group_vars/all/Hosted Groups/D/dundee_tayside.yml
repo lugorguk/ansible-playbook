@@ -17,5 +17,5 @@ Group_dundee_tayside:
   mailman: dundee
   dns_name: dundee
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

@@ -25,5 +25,5 @@ Group_exeter:
     - webmaster
   dns_name: exeter
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

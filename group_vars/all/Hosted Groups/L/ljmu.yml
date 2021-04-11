@@ -10,5 +10,5 @@ Group_ljmu:
   mailman: ljmu
   dns_name: ljmu
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

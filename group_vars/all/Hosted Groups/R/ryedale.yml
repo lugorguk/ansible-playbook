@@ -26,5 +26,5 @@ Group_ryedale:
     alias:
     - acg
   web_hosting:
-    on: snm
+    host: snm
     type: static

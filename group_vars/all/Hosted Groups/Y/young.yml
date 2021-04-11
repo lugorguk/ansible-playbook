@@ -7,5 +7,5 @@ Group_young:
 
   dns_name: young
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive

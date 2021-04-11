@@ -11,5 +11,5 @@ Group_ormskirk:
   mailman: ormskirk
   dns_name: ormskirk
   web_hosting:
-    on: web-01
+    host: web-01
     type: inactive
