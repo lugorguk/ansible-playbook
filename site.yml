@@ -1,5 +1,7 @@
 ---
-- hosts: admin
+- name: Configure DNS
+  hosts: admin
+  become: true
   tasks:
   - include_role:
       name: lugorguk.bind

@@ -3,7 +3,7 @@ Active_and_Inactive_Groups: |-
   {
     {% for this in vars | dict2items %}
       {% if this.key | regex_search('^Group_') is not none %}
-        "{{ this.key[6:] }}": {{ this.value }},
+        "{{ this.key[6:] }}": {{ lookup('vars', this.key) }},
       {% endif %}{# this.key | regex(group) #}
     {% endfor %}{# this in vars #}
   }
@@ -11,7 +11,7 @@ Active_Groups: |-
   {
     {% for this in Active_and_Inactive_Groups | dict2items %}
       {% if this.value.status | default('') | lower == 'active' %}
-        "{{ this.key }}": {{ this.value }},
+        "{{ this.key }}": {{ lookup('vars', this.key) }},
       {% endif %}{# this.value.status == 'Active' #}
     {% endfor %}{# this in Active_and_Inactive_Groups #}
   }
@@ -19,7 +19,7 @@ Inactive_Groups: |-
   {
     {% for this in Active_and_Inactive_Groups | dict2items %}
       {% if this.value.status | default('') | lower != 'active' %}
-        "{{ this.key }}": {{ this.value }},
+        "{{ this.key }}": {{ lookup('vars', this.key) }},
       {% endif %}{# this.value.status == 'Active' #}
     {% endfor %}{# this in Active_and_Inactive_Groups #}
   }
@@ -27,7 +27,7 @@ Hosted_Groups: |-
   {
     {% for this in Active_and_Inactive_Groups | dict2items %}
       {% if this.value.dns_name | default('') != '' %}
-        "{{ this.key }}": {{ this.value }},
+        "{{ this.key }}": {{ lookup('vars', this.key) }},
       {% endif %}{# this.value.status == 'Active' #}
     {% endfor %}{# this in Active_and_Inactive_Groups #}
   }
