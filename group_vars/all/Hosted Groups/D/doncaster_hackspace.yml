@@ -1,8 +1,10 @@
 ---
 Group_doncaster_hackspace:
+  notes: EMail from Andy 2021-09-03, withdrawn as requested
   established_date: "2020-10-01"
   last_update: "2020-10-01"
-  status: Active
+  last_update: "2021-12-16"
+  status: Gone
 
   title: Doncaster Hackspace
   categories: Yorkshire-and-Humber
@@ -11,13 +13,4 @@ Group_doncaster_hackspace:
     latitude: 53.52
     longitude: -1.13
 
-  website: https://dhs.lug.org.uk
   mailing_list: https://mailman.lug.org.uk/mailman/listinfo/doncaster
-  contact_address: "{{ protected_email_addresses.doncasterhackspace_lugmaster }}"
-  contact: LUG Master
-
-  mailman: doncaster
-  web_hosting:
-    via: snm
-    to: https://www.doncasterhackspace.org.uk/?page_id=275
-
